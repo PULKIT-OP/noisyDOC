@@ -1,8 +1,14 @@
+require('dotenv').config({ path: '../.env' });
 const express = require('express');
 const mongoose = require('mongoose');
 const User = require('./models/user');
+const UserRouter = require('./routes/user');
+const AuthenticateUser = require('./middlewares/user');
+const ChatRouter = require('./routes/chat');
+const cookieParser = require('cookie-parser');
 
-mongoose.connect('"mongodb://127.0.0.1:27017/pdf-chat-app"')
+// MongoDB Connection
+mongoose.connect('mongodb://127.0.0.1:27017/pdf-chat-app')
 .then(
     console.log("MongoDb Connected")
 )
@@ -10,36 +16,20 @@ mongoose.connect('"mongodb://127.0.0.1:27017/pdf-chat-app"')
     console.log("MongoDb Connection Error:", err)
 })
 
+// Express App Setup
 const app = express();
 const PORT = 3000;
 
+// Middlewares
 app.set('view engine', 'ejs');
 app.set('views', '../frontend');
 app.use(express.static('../frontend'));
+app.use(express.json());
+app.use(cookieParser());
 
-app.get('/', (req, res) => {
-    res.json({ message: "Welcome to the PDF Chat App API" });
-});
-app.get('/signup', async (req, res) => {
-    const { fullName, email, password } = req.body;
-    // Create a new user instance
-    const newUser = new User({ fullName, email, password });
-    await User.create(newUser)
-    res.json({ message: "User created successfully" });
-});
-app.get('/login', async (req, res) => {
-    const { email, password } = req.body;
-    // Find the user by email
-    const user = await User.findOne({ email });
-    if (!user) {
-        return res.status(404).json({ message: "User not found" });
-    }
-    // Check if the password is correct
-    if (password !== user.password) {
-        return res.status(401).json({ message: "Invalid credentials" });
-    }
-    res.json({ message: "Login Successful" });
-});
+// Routes
+app.use("/", UserRouter);
+app.use("/chat", AuthenticateUser, ChatRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running on PORT:${PORT}`);
