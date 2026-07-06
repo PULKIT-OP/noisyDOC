@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noisyDOC | New PDF + Chat</title>
+    <%- include('./style.ejs') %>
+</head>
+
+<body>
+    <%- include('./nav.ejs') %>
+
+        <main class="page-shell">
+            <section class="chat-layout">
+                <aside class="upload-panel">
+                    <div>
+                        <p class="eyebrow">Step 1</p>
+                        <h1 class="section-title" style="font-size: 2rem; line-height: 1.05;">Upload a document</h1>
+                        <p class="section-subtitle">Choose a PDF, TXT, or DOC file to open the chat workspace.</p>
+                    </div>
+
+                    <label>
+                        <span class="muted">File</span>
+                        <input type="file" accept=".pdf,.txt,.doc" />
+                    </label>
+
+                    <button class="btn btn-primary">Upload &amp; Start Chat</button>
+
+                    <div class="section-panel">
+                        <div class="doc-badge">filename.pdf</div>
+                        <p class="card-meta" style="margin-top: 0.75rem;">File ready for a simulated chat experience.
+                        </p>
+                    </div>
+                </aside>
+
+                <section class="chat-panel">
+                    <div class="workspace-header">
+                        <div>
+                            <p class="eyebrow">Step 2</p>
+                            <h2 class="section-title" style="font-size: 2rem; line-height: 1.05;">Chat window</h2>
+                            <p class="section-subtitle">Mock conversation state matching the product flow.</p>
+                        </div>
+                        <div class="chat-titlebar">📄 filename.pdf</div>
+                    </div>
+
+                    <div class="message-box">
+                        <div class="message bot">Document uploaded! Ask me anything about it.</div>
+                        <div class="message user">What is this about?</div>
+                        <div class="message bot">This document is about a sample workflow for reviewing and chatting
+                            with uploaded files.</div>
+                    </div>
+
+                    <div class="chat-input">
+                        <textarea placeholder="Type your question..."></textarea>
+                        <button class="btn btn-primary">Send</button>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <%- include('./script.ejs') %>
+</body>
+
+</html>

@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('./css/style') %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>noisyDOC | Talk with your Doc</title>
+    <%- include('./style') %>
 </head>
+
 <body>
     <%- include('./nav') %>
 
-    <%- include('./js/script') %>
+        <main class="hero-shell">
+            <section class="hero-card">
+                <p class="eyebrow">Document Q&A made simple</p>
+                <h1>Talk with your Doc</h1>
+                <p class="hero-copy">Upload PDFs, ask questions, and keep every document conversation in one focused
+                    workspace.</p>
+                <div class="hero-actions">
+                    <% if (currentUser) { %>
+                        <a class="btn btn-primary btn-lg" href="/chat/upload">Upload PDF</a>
+                        <a class="btn btn-outline-light btn-lg" href="/my-pdfs">My PDFs</a>
+                        <% } else { %>
+                            <a class="btn btn-primary btn-lg" href="/login">Get started</a>
+                            <a class="btn btn-outline-light btn-lg" href="/signup">Create account</a>
+                            <% } %>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <strong>Fast</strong>
+                        <span>Upload-first flow</span>
+                    </div>
+                    <div>
+                        <strong>Focused</strong>
+                        <span>My PDFs and Chat views</span>
+                    </div>
+                    <div>
+                        <strong>Clean</strong>
+                        <span>Designed for quick review</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('./script') %>
 </body>
+
 </html>

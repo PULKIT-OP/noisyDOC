@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noisyDOC | My PDFs</title>
+    <%- include('./style') %>
+</head>
+
+<body>
+    <%- include('./nav.ejs') %>
+
+        <main class="page-shell">
+            <section class="workspace-card">
+                <div class="workspace-header">
+                    <div>
+                        <p class="eyebrow">Library</p>
+                        <h1 class="section-title">My PDFs</h1>
+                        <p class="section-subtitle">A visual list of uploaded documents and upload timestamps.</p>
+                    </div>
+                    <a class="btn btn-primary" href="/chat">Upload new PDF</a>
+                </div>
+
+                <div class="pdf-grid">
+                    <article class="doc-card">
+                        <span class="doc-badge">Contract.pdf</span>
+                        <p class="card-meta">Project agreement, scanned and indexed for search.</p>
+                        <small>Uploaded on 07 Jul 2026</small>
+                    </article>
+                    <article class="doc-card">
+                        <span class="doc-badge">Research-notes.txt</span>
+                        <p class="card-meta">Working notes used to test question answering flow.</p>
+                        <small>Uploaded on 06 Jul 2026</small>
+                    </article>
+                    <article class="doc-card">
+                        <span class="doc-badge">Invoice-summary.doc</span>
+                        <p class="card-meta">Financial summary document with structured content.</p>
+                        <small>Uploaded on 05 Jul 2026</small>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <%- include('./script') %>
+</body>
+
+</html>

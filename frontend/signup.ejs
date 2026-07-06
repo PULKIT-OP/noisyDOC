@@ -2,34 +2,43 @@
 <html lang="en">
 
 <head>
-    <%- include('./css/style') %>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SignUp Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noisyDOC | Sign up</title>
+    <%- include('./style.ejs') %>
 </head>
 
 <body>
     <%- include('./nav') %>
-        <div class="container" style="width: 50%">
-            <h1 style="text-align: center; margin-bottom: 20px; margin-top: 20px">Sign Up Page</h1>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        <main class="auth-shell">
+            <section class="auth-card">
+                <div class="auth-intro">
+                    <p class="eyebrow">Get started</p>
+                    <h1>Sign up</h1>
+                    <p>Create your noisyDOC account so you can save and revisit document conversations.</p>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-        <%- include('./js/script') %>
+
+                <form class="auth-form" action="/user/signup" method="post">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="fullName" placeholder="Your name" />
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="you@example.com" />
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="Choose a password" />
+                    </label>
+                    <button type="submit" class="btn btn-primary w-100">Create account</button>
+                    <p class="form-footnote">Already have an account? <a href="/login">Login</a></p>
+                </form>
+            </section>
+        </main>
+
+        <%- include('./script') %>
 </body>
 
 </html>

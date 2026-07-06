@@ -2,30 +2,39 @@
 <html lang="en">
 
 <head>
-    <%- include('./css/style') %>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noisyDOC-Login</title>
+    <%- include('./style.ejs') %>
 </head>
 
 <body>
-    <%- include('./nav') %>
-        <div class="container" style="width: 50%">
-            <h1 style="text-align: center; margin-bottom: 20px; margin-top: 20px">Login Page</h1>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <%- include('./nav.ejs') %>
+
+        <main class="auth-shell">
+            <section class="auth-card">
+                <div class="auth-intro">
+                    <p class="eyebrow">Welcome back</p>
+                    <h1>Login</h1>
+                    <p>Continue from where you left off and open your document workspace.</p>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-        <%- include('./js/script') %>
+
+                <form class="auth-form" action="/user/login" method="post">
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="you@example.com" />
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="Enter your password" />
+                    </label>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                    <p class="form-footnote">No account yet? <a href="/signup">Create one</a></p>
+                </form>
+            </section>
+        </main>
+
+        <%- include('./script') %>
 </body>
 
 </html>
