@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "dev:rag": "cd ../rag && uvicorn index:app --reload --port 8000",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:rag\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.18.1",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.4.2",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
+    "form-data": "^4.0.6",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.7.2"
+    "mongoose": "^9.7.2",
+    "multer": "^2.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
   }
 }
