@@ -13,7 +13,7 @@
 
         <main class="page-shell">
             <section class="chat-layout">
-                <aside class="upload-panel">
+                <aside class="upload-panel" id="upload-section">
                     <div>
                         <p class="eyebrow">Step 1</p>
                         <h1 class="section-title" style="font-size: 2rem; line-height: 1.05;">Upload a document</h1>
@@ -22,10 +22,10 @@
 
                     <label>
                         <span class="muted">File</span>
-                        <input type="file" accept=".pdf,.txt,.doc" />
+                        <input type="file" id="pdf-upload" accept=".pdf,.txt,.doc" />
                     </label>
 
-                    <button class="btn btn-primary">Upload &amp; Start Chat</button>
+                    <button id="upload-btn" class="btn btn-primary">Upload &amp; Start Chat</button>
 
                     <div class="section-panel">
                         <div class="doc-badge">filename.pdf</div>
@@ -34,7 +34,7 @@
                     </div>
                 </aside>
 
-                <section class="chat-panel">
+                <section class="chat-panel" id="chat-section" style="display: none;">
                     <div class="workspace-header">
                         <div>
                             <p class="eyebrow">Step 2</p>
@@ -44,7 +44,7 @@
                         <div class="chat-titlebar">📄 filename.pdf</div>
                     </div>
 
-                    <div class="message-box">
+                    <div class="message-box" id="chat-messages">
                         <div class="message bot">Document uploaded! Ask me anything about it.</div>
                         <div class="message user">What is this about?</div>
                         <div class="message bot">This document is about a sample workflow for reviewing and chatting
@@ -52,8 +52,8 @@
                     </div>
 
                     <div class="chat-input">
-                        <textarea placeholder="Type your question..."></textarea>
-                        <button class="btn btn-primary">Send</button>
+                        <textarea id="chat-input" placeholder="Type your question..."></textarea>
+                        <button id="send-btn" class="btn btn-primary">Send</button>
                     </div>
                 </section>
             </section>

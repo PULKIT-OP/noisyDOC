@@ -3,8 +3,7 @@ import faiss
 import numpy as np
 import pickle
 from typing import List, Any
-from sentence_transformers import SentenceTransformer
-from embeddings import EmbeddingPipeline
+from embeddings import get_embedding_model, EmbeddingPipeline
 
 class FaissVectorStore:
     def __init__(self, persist_dir: str = "faiss_store", embedding_model: str = "all-MiniLM-L6-v2", chunk_size: int = 1000, chunk_overlap: int = 200):
@@ -13,10 +12,9 @@ class FaissVectorStore:
         self.index = None
         self.metadata = []
         self.embedding_model = embedding_model
-        self.model = SentenceTransformer(embedding_model)
+        self.model = get_embedding_model(embedding_model)  # Use cached model
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
-        print(f"[INFO] Loaded embedding model: {embedding_model}")
 
     def build_from_documents(self, documents: List[Any]):
         print(f"[INFO] Building vector store from {len(documents)} raw documents...")
@@ -28,8 +26,25 @@ class FaissVectorStore:
         self.save()
         print(f"[INFO] Vector store built and saved to {self.persist_dir}")
 
+    def add_document(self, document: Any):
+        """Add a single document to existing vector store without rebuilding."""
+        emb_pipe = EmbeddingPipeline(model_name=self.embedding_model, chunk_size=self.chunk_size, chunk_overlap=self.chunk_overlap)
+        chunks = emb_pipe.chunk_documents([document])
+        if not chunks:
+            print(f"[WARNING] No chunks created from document")
+            return False
+        embeddings = emb_pipe.embed_chunks(chunks)
+        metadatas = [{"text": chunk.page_content} for chunk in chunks]
+        self.add_embeddings(np.array(embeddings).astype('float32'), metadatas)
+        self.save()
+        print(f"[INFO] Document added to existing vector store")
+        return True
+
     def add_embeddings(self, embeddings: np.ndarray, metadatas: List[Any] = None):
-        dim = embeddings.shape[1]
+        if embeddings.size == 0:
+            print(f"[WARNING] No embeddings to add (empty array)")
+            return
+        dim = embeddings.shape[1] if len(embeddings.shape) > 1 else embeddings.shape[0]
         if self.index is None:
             self.index = faiss.IndexFlatL2(dim)
         self.index.add(embeddings)
@@ -54,6 +69,9 @@ class FaissVectorStore:
         print(f"[INFO] Loaded Faiss index and metadata from {self.persist_dir}")
 
     def search(self, query_embedding: np.ndarray, top_k: int = 5):
+        if self.index is None:
+            print(f"[WARNING] Vector store is empty (no documents indexed yet)")
+            return []
         D, I = self.index.search(query_embedding, top_k)
         results = []
         for idx, dist in zip(I[0], D[0]):

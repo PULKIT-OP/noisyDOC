@@ -4,12 +4,21 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 from data_loaders import load_all_documents
 
+# Global embedding model cache - load once, reuse everywhere
+_embedding_model_cache = {}
+
+def get_embedding_model(model_name: str = "all-MiniLM-L6-v2") -> SentenceTransformer:
+    """Get or load the embedding model from cache."""
+    if model_name not in _embedding_model_cache:
+        print(f"[INFO] Loading embedding model: {model_name}")
+        _embedding_model_cache[model_name] = SentenceTransformer(model_name)
+    return _embedding_model_cache[model_name]
+
 class EmbeddingPipeline:
     def __init__(self, model_name: str = "all-MiniLM-L6-v2", chunk_size: int = 1000, chunk_overlap: int = 200):
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
-        self.model = SentenceTransformer(model_name)
-        print(f"[INFO] Loaded embedding model: {model_name}")
+        self.model = get_embedding_model(model_name)  # Use cached model
 
     def chunk_documents(self, documents: List[Any]) -> List[Any]:
         splitter = RecursiveCharacterTextSplitter(

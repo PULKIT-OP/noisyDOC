@@ -5,6 +5,33 @@ from langchain_community.document_loaders import Docx2txtLoader
 from langchain_community.document_loaders.excel import UnstructuredExcelLoader
 from langchain_community.document_loaders import JSONLoader
 
+def load_document(file_path: str) -> List[Any]:
+    """
+    Load a single file and convert to LangChain document structure.
+    """
+    path = Path(file_path)
+    ext = path.suffix.lower()
+    try:
+        if ext == '.pdf':
+            loader = PyPDFLoader(str(path))
+        elif ext == '.txt':
+            loader = TextLoader(str(path))
+        elif ext == '.csv':
+            loader = CSVLoader(str(path))
+        elif ext == '.xlsx':
+            loader = UnstructuredExcelLoader(str(path))
+        elif ext == '.docx':
+            loader = Docx2txtLoader(str(path))
+        elif ext == '.json':
+            loader = JSONLoader(str(path))
+        else:
+            print(f"[ERROR] Unsupported file extension: {ext}")
+            return []
+        return loader.load()
+    except Exception as e:
+        print(f"[ERROR] Failed to load file {file_path}: {e}")
+        return []
+
 def load_all_documents(data_dir: str) -> List[Any]:
     """
     Load all supported files from the data directory and convert to LangChain document structure.
