@@ -8,3 +8,12 @@ faiss-cpu
 chromadb
 langchain-groq
 python-dotenv
+fastapi
+uvicorn
+python-multipart
+numpy
+langchain-text-splitters
+docx2txt
+unstructured
+openpyxl
+jq
