@@ -20,7 +20,7 @@ const ingestDocument = async (filePath, fileName) => {
 const queryDocument = async (question) => {
   const response = await axios.post(`${RAG_URL}/query`, {
     question,
-    top_k: 3
+    top_k: 8
   })
   return response.data.answer
 }

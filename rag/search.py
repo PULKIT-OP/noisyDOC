@@ -1,4 +1,5 @@
 import os
+import re
 from dotenv import load_dotenv
 from vectorstore import FaissVectorStore
 from langchain_groq import ChatGroq
@@ -25,6 +26,28 @@ class RAGSearch:
         self.llm = ChatGroq(groq_api_key=groq_api_key, model_name=llm_model)
         print(f"[INFO] Groq LLM initialized: {llm_model}")
 
+    def _keyword_fallback_context(self, query: str) -> str:
+        stopwords = {
+            "what", "which", "when", "where", "who", "whom", "whose", "why", "how",
+            "is", "are", "was", "were", "be", "been", "being", "the", "a", "an",
+            "and", "or", "of", "to", "in", "on", "for", "with", "about", "this",
+            "that", "these", "those", "please", "tell", "explain", "give", "me"
+        }
+        keywords = [word for word in re.findall(r"[A-Za-z0-9]+", query.lower()) if len(word) > 3 and word not in stopwords]
+        if not keywords:
+            return ""
+
+        scored_chunks = []
+        for meta in self.vectorstore.metadata:
+            text = (meta or {}).get("text", "")
+            lower_text = text.lower()
+            hits = sum(1 for keyword in keywords if keyword in lower_text)
+            if hits:
+                scored_chunks.append((hits, text))
+
+        scored_chunks.sort(key=lambda item: item[0], reverse=True)
+        return "\n\n".join(text for _, text in scored_chunks[:3])
+
     def search_and_summarize(self, query: str, top_k: int = 10, min_score: float = 0.1) -> str:
         results = self.vectorstore.query(query, top_k=top_k)
         if not results:
@@ -34,7 +57,9 @@ class RAGSearch:
         texts = [r["metadata"].get("text", "") for r in results if r["metadata"] and (1 / (1 + r["distance"])) >= min_score]
         context = "\n\n".join(texts)
         if not context:
-            return "\nNo relevant documents found."
+            context = self._keyword_fallback_context(query)
+            if not context:
+                return "\nNo relevant documents found."
         prompt = f"""You are a helpful assistant. Answer the question using the provided context.
                     If the context contains the answer, provide a detailed response based on the context.
                     If the context does not contain the answer, say: "The provided context does not contain enough information to answer this question."

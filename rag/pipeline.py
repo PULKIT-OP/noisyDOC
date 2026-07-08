@@ -32,5 +32,5 @@ def run_ingest(file_path: str):
     return True
 
 def run_query(question: str, top_k: int = 3):
-    summary = rag_search.search_and_summarize(question, top_k=top_k, min_score=0.5)
+    summary = rag_search.search_and_summarize(question, top_k=max(top_k, 8), min_score=0.2)
     return summary

@@ -98,7 +98,7 @@
     .workspace-card,
     .pdf-grid,
     .chat-layout {
-        width: min(1320px, 100%);
+        width: min(1500px, 100%);
     }
 
     .hero-card {
@@ -311,13 +311,25 @@
     .chat-layout {
         display: grid;
         grid-template-columns: minmax(320px, 400px) minmax(0, 1fr);
-        gap: 1.25rem;
+        gap: 1.5rem;
+        justify-content: center;
+        width: min(1240px, calc(100% - 4rem));
     }
 
     .upload-panel,
     .chat-panel {
         display: grid;
         gap: 1rem;
+    }
+
+    .upload-panel {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .chat-panel {
+        grid-column: 1 / -1;
+        width: 100%;
     }
 
     .message-box {
