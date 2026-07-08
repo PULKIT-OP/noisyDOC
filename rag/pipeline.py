@@ -19,6 +19,7 @@ else:
         print("[INFO] No initial documents found in data folder. Vector store ready for ingestion.")
 
 rag_search = RAGSearch()
+rag_search.vectorstore = store
 
 def run_ingest(file_path: str):
     docs = load_document(file_path)
@@ -27,6 +28,7 @@ def run_ingest(file_path: str):
     # Add each document to existing vector store instead of rebuilding
     for doc in docs:
         store.add_document(doc)
+    rag_search.vectorstore = store
     return True
 
 def run_query(question: str, top_k: int = 3):

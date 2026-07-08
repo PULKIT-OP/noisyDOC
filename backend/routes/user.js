@@ -40,8 +40,5 @@ Router.get("/my-pdfs-data", AuthenticateUser, async (req, res) => {
 Router.get("/chat", AuthenticateUser, (req, res) => {
   res.render("chat");
 });
-Router.get("/chat/upload", AuthenticateUser, (req, res) => {
-  res.render("chat-upload");
-});
 
 module.exports = Router;
