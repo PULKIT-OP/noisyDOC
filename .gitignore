@@ -2,3 +2,10 @@
 backend/node_modules/
 postman/
 .postman/
+faiss_store/
+uploads/
+pdf/
+text/
+ui.md/
+
+

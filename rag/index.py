@@ -1,5 +1,5 @@
 # rag/app.py  — NEW FILE (your FastAPI server)
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import shutil, os
@@ -9,7 +9,7 @@ from pipeline import run_ingest, run_query  # we'll add these 2 functions
 
 app = FastAPI()
 
-# allow Node.js to call this server (like CORS in Express)
+# allow Node.js to call this server
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -17,29 +17,34 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ─── Request body shapes (like req.body in Express) ───
+# Request body shapes (like req.body in Express)
 class QueryRequest(BaseModel):
     question: str
+    pdf_id: str
     top_k: int = 3
 
-# ─── ROUTES ───────────────────────────────────────────
+# ROUTES
 
 @app.get("/")
 def health_check():
     return {"status": "RAG service running"}
 
 @app.post("/ingest")
-async def ingest(file: UploadFile = File(...)):
+async def ingest(file: UploadFile = File(...), pdf_id: str = Form(...)):
     # save uploaded file to data/pdf/
-    save_path = f"../data/pdf/{file.filename}"
+    _, ext = os.path.splitext(file.filename)
+    os.makedirs("../data/pdf", exist_ok=True)
+    save_path = f"../data/pdf/{pdf_id}{ext or ''}"
     with open(save_path, "wb") as f:
         shutil.copyfileobj(file.file, f)
     
-    # run your existing pipeline on it
-    result = run_ingest(save_path)
+    # run existing pipeline on it
+    result = run_ingest(save_path, pdf_id)
+    if not result:
+        return {"message": "Document ingestion failed", "file": file.filename}
     return {"message": "Document ingested", "file": file.filename}
 
 @app.post("/query")
 def query(body: QueryRequest):
-    answer = run_query(body.question, body.top_k)
+    answer = run_query(body.question, body.pdf_id, body.top_k)
     return {"answer": answer}

@@ -3,34 +3,24 @@ from vectorstore import FaissVectorStore
 from search import RAGSearch
 import os
 
-# Initialize global vector store
-store = FaissVectorStore("faiss_store")  # global, loaded once on startup
+def _document_store_dir(document_id: str) -> str:
+    return FaissVectorStore.make_persist_dir("faiss_store", document_id)
 
-# Load existing store or build from initial data on first startup
-faiss_path = os.path.join("faiss_store", "faiss.index")
-meta_path = os.path.join("faiss_store", "metadata.pkl")
-if os.path.exists(faiss_path) and os.path.exists(meta_path):
-    store.load()
-else:
-    docs = load_all_documents("data")
-    if docs:
-        store.build_from_documents(docs)
-    else:
-        print("[INFO] No initial documents found in data folder. Vector store ready for ingestion.")
-
-rag_search = RAGSearch()
-rag_search.vectorstore = store
-
-def run_ingest(file_path: str):
+def run_ingest(file_path: str, document_id: str):
     docs = load_document(file_path)
     if not docs:
         return False
-    # Add each document to existing vector store instead of rebuilding
-    for doc in docs:
-        store.add_document(doc)
-    rag_search.vectorstore = store
+    store = FaissVectorStore(_document_store_dir(document_id))
+    store.build_from_documents(docs)
     return True
 
-def run_query(question: str, top_k: int = 3):
+def run_query(question: str, document_id: str, top_k: int = 3):
+    store_dir = _document_store_dir(document_id)
+    faiss_path = os.path.join(store_dir, "faiss.index")
+    meta_path = os.path.join(store_dir, "metadata.pkl")
+    if not os.path.exists(faiss_path) or not os.path.exists(meta_path):
+        return "No saved document index found for that document. Upload the PDF again to create it."
+
+    rag_search = RAGSearch(persist_dir=store_dir, load_from_data=False)
     summary = rag_search.search_and_summarize(question, top_k=max(top_k, 8), min_score=0.2)
     return summary

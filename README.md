@@ -12,20 +12,27 @@ The project uses:
 
 ## Key points to keep in mind before testing the project
 
-- It uses a shared FAISS vector store, which simply means all the documents that you will upload will be indexed in same file 
-- So while you are chatting with you doc PLEASE specify the doc name for each query.
-- For example: from the document testing.pdf tell me in short who the fuck is Narendra Modi?
-- If you donot specify the document then it might give wrong answer or tell you it doesnot have any context about your query.
+- Each uploaded PDF now gets its own persisted FAISS store under `rag/faiss_store/documents/<pdf_id>`.
+- You can reopen a saved PDF from the "My PDFs" page and continue chatting without reuploading it.
+- The chat flow still uses the selected document id so questions are answered from the correct document.
+- Just keep one thing in mind while chatting with your doc, it cannot remember what you asked it before so please try to complete one question in one text do not break it in multiple texts like we do in whatsapp.
+- for example: query 1 : what is democracy in India? 
+               response 1 : 85% blended ethanol still fuel prices are not down.
+
+               query 2 : what are its advantages?
+               response 2 will not get generated for this query because it doesnot know what did you ask before.
+- Instead you should do this --->
+               query 1 : what is democracy in India? what are its advantages if it exist?
 
 ## Features
 
 - User signup/login with JWT cookie auth
 - Upload PDF/TXT/DOC files from chat screen
-- Automatic ingestion into vector store after upload
+- Automatic ingestion into a per-document vector store after upload
+- Re-open previously uploaded documents from the library page
 - Chat-style Q&A over uploaded content
 - My PDFs page for uploaded document history
 - Retrieval fallback improvements for better recall on specific terms
-
 
 ## Project Structure
 
@@ -100,7 +107,7 @@ This starts:
 - Express server on `http://localhost:3000`
 - FastAPI RAG server on `http://127.0.0.1:8000`
 
-### Run separately (optional) (dont use it, its shit)
+### Run separately (Not Recommended)
 
 Backend:
 
@@ -120,12 +127,13 @@ uvicorn index:app --reload --port 8000
 
 1. User logs in.
 2. User uploads a file from chat page.
-3. Express stores file metadata in MongoDB and forwards file to FastAPI `/ingest`.
-4. FastAPI loads text, chunks content, creates embeddings, and updates FAISS store.
-5. User asks a question.
-6. Express forwards question to FastAPI `/query`.
-7. FastAPI retrieves relevant chunks and sends context to Groq LLM.
-8. Final answer is returned to chat UI.
+3. Express stores file metadata in MongoDB, creates a PDF record, and forwards the file plus `pdfId` to FastAPI `/ingest`.
+4. FastAPI loads text, chunks content, creates embeddings, and saves the FAISS index for that specific PDF id.
+5. User can later open the same PDF from "My PDFs" without uploading again.
+6. User asks a question.
+7. Express forwards question and `pdfId` to FastAPI `/query`.
+8. FastAPI loads the matching FAISS index, retrieves relevant chunks, and sends context to Groq LLM.
+9. Final answer is returned to chat UI.
 
 ## Key Endpoints
 
@@ -141,8 +149,8 @@ uvicorn index:app --reload --port 8000
 ### FastAPI (Python)
 
 - `GET /` health check
-- `POST /ingest` ingest uploaded file
-- `POST /query` ask question over vector store
+- `POST /ingest` ingest uploaded file for a specific document id
+- `POST /query` ask question over a specific document vector store
 
 ## Scripts
 
@@ -186,12 +194,12 @@ What helps:
 
 ## Current Limitations
 
-- Retrieval currently uses a shared FAISS store for all uploaded documents.
-- Per-document isolated chat can be added by storing separate indexes or filtering by document metadata.
+- FAISS indexes are still stored locally on the machine running the app.
+- If the server is lost, the FAISS folders need to be backed up or restored separately.
 
 ## Future Improvements
 
-- Per-document vector stores (or metadata-filtered retrieval)
+- Move FAISS persistence to cloud storage or a managed vector DB if the project grows
 - Better citation/source snippet display in responses
 - Hybrid retrieval (semantic + keyword/BM25)
 - File delete and index cleanup flow
@@ -220,7 +228,7 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 
 ### Areas We'd Love Help With
 
-- Per-document vector stores (isolated chat per document)
+- Cloud-backed FAISS persistence or managed vector DB migration
 - Better citation and source snippet display
 - Hybrid retrieval (semantic + keyword/BM25)
 - File delete and index cleanup functionality

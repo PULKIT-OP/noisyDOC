@@ -14,6 +14,9 @@
         <main class="auth-shell">
             <section class="auth-card">
                 <div class="auth-intro">
+                    <% if (locals.message) { %>
+                        <p class="text-danger"><%= locals.message %></p>
+                    <% } %>
                     <p class="eyebrow">Welcome back</p>
                     <h1>Login</h1>
                     <p>Continue from where you left off and open your document workspace.</p>

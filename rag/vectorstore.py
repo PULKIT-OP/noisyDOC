@@ -2,6 +2,7 @@ import os
 import faiss
 import numpy as np
 import pickle
+import re
 from typing import List, Any
 from embeddings import get_embedding_model, EmbeddingPipeline
 
@@ -15,6 +16,11 @@ class FaissVectorStore:
         self.model = get_embedding_model(embedding_model)  # Use cached model
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
+
+    @staticmethod
+    def make_persist_dir(base_dir: str, document_id: str) -> str:
+        safe_document_id = re.sub(r"[^A-Za-z0-9_-]", "_", str(document_id))
+        return os.path.join(base_dir, "documents", safe_document_id)
 
     def build_from_documents(self, documents: List[Any]):
         print(f"[INFO] Building vector store from {len(documents)} raw documents...")

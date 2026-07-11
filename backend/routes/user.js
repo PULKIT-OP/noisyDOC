@@ -28,11 +28,14 @@ Router.get("/my-pdfs-data", AuthenticateUser, async (req, res) => {
   try {
     const user = req.user; // AuthenticateUser middleware should set this
     const pdfs = await PDF.find({ createdBy: user._id });
-    res.json(pdfs.map(pdf => ({
-      filename: pdf.name,
-      uploadDate: pdf.createdAt,
-      description: "Document indexed for search."
-    })));
+    res.json(
+      pdfs.map((pdf) => ({
+        id: pdf._id,
+        filename: pdf.name,
+        uploadDate: pdf.createdAt,
+        description: "Document indexed for search.",
+      })),
+    );
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch PDFs" });
   }

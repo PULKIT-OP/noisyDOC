@@ -1,28 +1,30 @@
-const axios = require('axios')
-const fs = require('fs')
-const FormData = require('form-data')
+const axios = require("axios");
+const fs = require("fs");
+const FormData = require("form-data");
 
-const RAG_URL = process.env.RAG_SERVICE_URL || 'http://localhost:8000'
+const RAG_URL = process.env.RAG_SERVICE_URL || "http://localhost:8000";
 
 // called when user uploads a PDF
-const ingestDocument = async (filePath, fileName) => {
-  const formData = new FormData()
-  const fileStream = fs.createReadStream(filePath)
-  formData.append('file', fileStream, fileName)
+const ingestDocument = async (filePath, fileName, pdfId) => {
+  const formData = new FormData();
+  const fileStream = fs.createReadStream(filePath);
+  formData.append("file", fileStream, fileName);
+  formData.append("pdf_id", pdfId);
 
   const response = await axios.post(`${RAG_URL}/ingest`, formData, {
-    headers: formData.getHeaders()
-  })
-  return response.data
-}
+    headers: formData.getHeaders(),
+  });
+  return response.data;
+};
 
 // called when user sends a chat message
-const queryDocument = async (question) => {
+const queryDocument = async (question, pdfId) => {
   const response = await axios.post(`${RAG_URL}/query`, {
     question,
-    top_k: 8
-  })
-  return response.data.answer
-}
+    pdf_id: pdfId,
+    top_k: 8,
+  });
+  return response.data.answer;
+};
 
-module.exports = { ingestDocument, queryDocument }
+module.exports = { ingestDocument, queryDocument };
