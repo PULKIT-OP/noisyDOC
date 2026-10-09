@@ -24,8 +24,11 @@ Create a `.env` file in the project root (`RAG_PROJECT/.env`):
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
+OCR_API_KEY=your_ocr_space_api_key_here
+OCR_ENGINE=2
+OCR_LANGUAGE=eng
 JWT_SECRET=your_super_secret_jwt_key_here
-RAG_SERVICE_URL=http://localhost:8000 (optioanl)
+RAG_SERVICE_URL=http://localhost:8000
 ```
 
 **How to get Groq API Key:**
@@ -121,6 +124,12 @@ FastAPI server running on port 8000
 - Verify your `.env` file is in the project root
 - Make sure the key is correctly set
 - Restart the services after updating `.env`
+
+### "Scanned PDF ingestion failed"
+- Add `OCR_API_KEY` to the root `.env` file.
+- Scanned PDFs are sent to OCR.Space in two-page chunks.
+- Chunks that exceed the OCR upload size are retried as compressed grayscale PDFs.
+- Check your OCR.Space quota and plan limits if processing stops partway through a document.
 
 ## Next Steps
 

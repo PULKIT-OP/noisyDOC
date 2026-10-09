@@ -239,7 +239,11 @@
 
     .btn-primary {
         border: 0;
-        background: #8b5cf6;
+        background: linear-gradient(
+            90deg,
+            #8b5cf6 var(--upload-progress, 0%),
+            #4c3b87 var(--upload-progress, 0%)
+        );
         color: #04101d;
         font-weight: 800;
     }

@@ -13,7 +13,11 @@
 
         const msgDiv = document.createElement('div');
         msgDiv.className = `message ${sender}`;
-        msgDiv.textContent = text;
+        if (sender === 'bot') {
+            msgDiv.innerHTML = DOMPurify.sanitize(marked.parse(text));
+        } else {
+            msgDiv.textContent = text;
+        }
         chatMessages.appendChild(msgDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
@@ -26,6 +30,34 @@
         if (titlebar && fileName) {
             titlebar.textContent = `📄 ${fileName}`;
         }
+    }
+
+    function updateUploadButton(button, progress, message) {
+        button.textContent = `${message} ${Math.round(progress)}%`;
+        button.style.setProperty('--upload-progress', `${Math.max(0, Math.min(progress, 100))}%`);
+    }
+
+    function pollUploadStatus(token, button) {
+        let stopped = false;
+        const poll = async () => {
+            if (stopped) return;
+            try {
+                const response = await fetch(`/chat/upload-status/${encodeURIComponent(token)}`);
+                if (response.ok) {
+                    const status = await response.json();
+                    updateUploadButton(button, status.progress || 0, status.message || 'Processing...');
+                    if (status.status === 'complete' || status.status === 'failed') {
+                        stopped = true;
+                        return;
+                    }
+                }
+            } catch (error) {
+                console.warn('Upload status error:', error);
+            }
+            window.setTimeout(poll, 600);
+        };
+        poll();
+        return () => { stopped = true; };
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -91,29 +123,48 @@
                 const formData = new FormData();
                 formData.append('document', file);
 
+                const progressToken = crypto.randomUUID
+                    ? crypto.randomUUID()
+                    : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+                let stopPolling = pollUploadStatus(progressToken, uploadBtn);
                 try {
-                    uploadBtn.textContent = 'Uploading...';
                     uploadBtn.disabled = true;
+                    updateUploadButton(uploadBtn, 0, 'Uploading...');
 
-                    const response = await fetch('/chat/upload', {
-                        method: 'POST',
-                        body: formData
+                    const result = await new Promise((resolve, reject) => {
+                        const request = new XMLHttpRequest();
+                        request.open('POST', '/chat/upload');
+                        request.setRequestHeader('X-Upload-Token', progressToken);
+                        request.upload.addEventListener('progress', (event) => {
+                            if (event.lengthComputable) {
+                                updateUploadButton(uploadBtn, event.loaded / event.total * 25, 'Uploading...');
+                            }
+                        });
+                        request.addEventListener('load', () => {
+                            let data = {};
+                            try { data = JSON.parse(request.responseText); } catch (error) { }
+                            if (request.status >= 200 && request.status < 300) resolve(data);
+                            else reject(new Error(data.message || data.detail?.message || 'Upload failed.'));
+                        });
+                        request.addEventListener('error', () => reject(new Error('Network error during upload.')));
+                        request.send(formData);
                     });
 
-                    if (response.ok) {
-                        const result = await response.json();
+                    if (result) {
                         setActiveDocument(result.id, result.file || file.name);
                         uploadSection.style.display = 'none';
                         chatSection.style.display = 'grid';
 
                         addMessage(`Document ${file.name} uploaded! Ask me anything about it.`, 'bot');
                     } else {
-                        alert('Upload failed. Please try again.');
+                        throw new Error('Upload failed. Please try again.');
                     }
                 } catch (error) {
                     console.error('Upload error:', error);
-                    alert('An error occurred during upload.');
+                    alert(error.message || 'An error occurred during upload.');
                 } finally {
+                    stopPolling();
+                    uploadBtn.style.removeProperty('--upload-progress');
                     uploadBtn.textContent = 'Upload & Start Chat';
                     uploadBtn.disabled = false;
                 }

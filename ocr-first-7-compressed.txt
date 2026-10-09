@@ -1,0 +1,2725 @@
+Test Booklet Code
+SUSHRUT
+No. :
+This Booklet contains 32 pages.
+Do not open this Test Booklet until you are asked to do so.
+Important Instructions :
+1.
+The Answer Sheet is inside this Test Booklet. When you are directed to open the Test Booklet, take out the
+Answer Sheet and fill in the particulars on ORIGINAL Copy carefully with blue/black ball point pen only.
+2.
+The test is of 3 hours 15 minutes duration and the Test Booklet contains 180 multiple-choice questions
+(four options with a single correct answer) from Physics, Chemistry and Biology (Botany and Zoology).
+3.
+Wherever the symbols/ constants are not mentioned, they are to be considered as per their standard meaning/
+4.
+Each question carries 4 marks.
+For each correct response, the candidate will get 4 marks.
+incorrect response, one mark will be deducted from the total scores.
+The maximum marks are 720.
+5.
+Use Blue/Black Ball Point Pen only for writing particulars on this page/marking responses on Answer
+Sheet.
+6.
+7.
+Rough work is to be done in the space provided for this purpose in the Test Booklet only.
+On completion of the test, the candidate must handover the Answer Sheet (ORIGINAL and OFFICE
+Copy) to the Invigilator before leaving the Room/Hall. The candidates are allowed to take away
+this Test Booklet with them.
+8.
+9.
+The CODE for this Booklet is 80. Make sure to enter this code in the OMR answer sheet.
+The candidates should ensure that the Answer Sheet is not folded. Do not make any stray marks
+on the Answer Sheet. Do not write your Roll No. anywhere else except in the specified space in the
+Test Booklet/ Answer Sheet.
+10. Use of white fluid for correction is NOT permissible on the Answer Sheet.
+11. Each candidate must show on-demand his/her Admit Card to the Invigilator.
+12. No candidate, without special permission of the centre Superintendent or Invigilator, would leave
+13. The candidates should not leave the Examination Hall without handing over their Answer Sheet to
+the Invigilator on duty and sign (with time) the Attendance Sheet twice. Cases, where a candidate
+has not signed the Attendance Sheet second time, will be deemed not to have handed over the
+Answer Sheet and dealt with as an Unfair Means case.
+14. Use of Electronic/ Manual Calculator is prohibited.
+15. The candidates are governed by all Rules and Regulations of the examination with regard to their
+conduct in the Examination Room/Hall. All cases of unfair means will be dealt with as per the
+Rules and Regulations of this examination along with Public Examinations (Prevention of unfair
+means act 2024).
+16. No part of the Test Booklet and Answer Sheet shall be detached under any circumstances.
+17. The candidates will write the Correct Test Booklet Code as given in the Test Booklet/Answer
+Sheet in the Attendance Sheet.
+18. If a candidate marks more than one answers for a question in the OMR sheet, it will be treated as
+incorrect and negative marking will be applicable.
+Name of the Candidate (in Capitals) :
+Roll Number : in figures
+: in words
+Centre of Examination (in Capitals) :
+Candidate's Signature:
+Facsimile signature stamp of
+Centre Superintendent :
+Invigilator's Signature :
+
+80
+2
+Space For Rough Work
+
+Space For Rough Work
+80
+
+80
+1.
+An ideal gas is made of polyatomic
+molecules. Each of the molecules has
+three translational, three rotational and
+f number of vibrational modes. If the
+ratio of heat capacities Cp/Cy of the gas
+is 8/7, then the value of f is :
+(1) 3
+(2) 2
+(3) 1
+(4) 4
+4.
+2.
+One main scale division of a Vernier
+calliper is equal to 1 mm and the
+number of divisions on the Vernier scale
+is 10. When both the jaws touch each
+other, the Vernier scale shifts to the
+left of zero of the main scale in such a
+way that 4th Vernier division coincides
+with a division of the main scale. If this
+Vernier calliper measures the length
+of a wire to be 1 cm, the actual length
+of the wire is :
+(1) 0.96 cm
+(2)
+1.00 cm
+(3) 1.04 cm
+(4) 0.60 cm
+5.
+З.
+Three identical p-n junction diodes D1,
+D2 and D3 are connected across a
+battery as shown in the figure. If the
+width of the depletion regions of D1, D2
+and D3 are W1, W2 and W3, respectively,
+then the correct option is :
+1kg
+1kg
+(1)
+(2) W3 > W2 > W1
+(3) W2 > W1 = Wз
+(4) W1 > W½ > Wз
+Consider a spring-mass simple harmonic
+oscillator in one dimension. The mass
+of the particle is m kg and the spring
+constant is k Nm -1. At a given instant,
+the extension of the spring is x meter
+and the speed of the particle is v ms-1.
+On the x - v plane, if the graph of v as a
+function of x is a circle, then the correct
+option is :
+(1) k=m
+(2)
+k=m~
+(3) k = Vm
+(4) k =
+m
+An electromagnetic wave travelling in
+a lossless dielectric medium having a
+dielectric constant, €, =9, has the
+electric field, Ex-Eo sin (kz-2u× 10°t)
+Vm - 1 where Eo is the amplitude and k
+is the wave vector. Among the following
+options, the incorrect choice is :
+(1) The wavelength
+of
+the
+electromagnetic wave inside the
+medium is 300 m
+(2) The magnetic field is given by the
+relation By - Bo sin (kz- × 106 t)
+where v is the speed of the
+electromagnetic wave inside the
+medium
+(3)
+The direction of propagation of the
+electromagnetic wave is along + z
+(4)
+The speed of the electromagnetic
+wave inside the medium is
+108 ms - 1
+
+6.
+5
+A frictionless circular wire of unit
+radius is fixed on the horizontal plane.
+Two point particles of unit mass start
+moving simultaneously from point
+0 =
+with identical uniform angular
+2
+speeds in opposite directions, and meet
+again at point B 0=
+. During this
+time, which of the following figures
+schematically represent the magnitude
+of the total linear momentum P of the
+system, as a function of 0 ?
+7.
+80
+In Geiger-Marsden experiment, the
+number of scattered a-particles N(0) is
+plotted as a function of scattering angle
+o.
+Which of the following options
+represents the correct plot?
+N (8)
+(1)
+10°-
+105-
+10*-
+103-
+102
+30 60 90 120 150 180* 8(in dogres)
+N(e)
+(2)
+• 0(in degree)
+30 60 90 120 150 180
+(3)
+N(e)
+102-
+10*-
+10%
+102-
+100
+N (8)
+30 60 90 120 150 180* B(in degrec)
+(4)
+8.
+(2)
+102
+100
+30 60 90 120 150 180" (in degrec)
+Consider three media P, Q and R with
+refractive indices 1, 1.25, and 1.5,
+respectively. The medium Q having a
+thickness of 5 cm is placed between
+extended media P and R as shown in
+the figure. An object O is placed at the
+center of medium Q. If viewed from
+medium P near the normal direction,
+the apparent depth of O is h1:
+For
+similar observation from medium R, the
+apparent depth is h2. The value of
+|h1 - h21, in cm, is :
+Пр = 1;
+5 cm
+o.
+nQ = 1.25
+7R = 1.5
+(1)
+(3)
+1
+(2)
+(4)
+2
+
+80
+9.
+6
+Consider that os, kg, b represent
+Stefan-Boltzmann constant, Boltzmann
+constant and Wien's displacement law
+constant, respectively. The dimension
+of osky'b is :
+(1) IL-1K-2]
+(2) IL-1T-1K-31
+(3) [L-IT-1K-4] (4) [L-T-1K-2]
+10. For sound waves, if the number of nodes
+for the 5th harmonic of an open-ended
+pipe is n and that for the 9th harmonic
+of the same pipe with one of its ends
+closed is m, the ratio
+n
+• is :
+m
+(1)
+9
+5
+(2) 1
+(3)
+5
+(4)
+5
+9
+13. Consider a fixed uniformly charged
+insulating sphere with radius R and
+total charge +Q. A point charge - q
+(q<<Q) with mass m is released from
+rest at a distance of 3R from the centre
+of the charged sphere. When the point
+charge reaches the surface of the
+sphere, its speed is :
+(€ is the permittivity of vacuum, neglect
+gravitational forces).
+209
+Q9
+(1)
+(2)
+(3)
+VATEOmR
+(4)
+3Qq
+V4TEomR
+11. Two infinitely long parallel conducting
+wires A and B carry currents I and 21,
+respectively, in the same direction. The
+wire A has uniform mass per unit length
+A and lies on an insulated floor. The
+wire B is kept fixed at a height h above
+the floor.
+The minimum magnitude of
+h so that the wire A does not rise from
+the floor is :
+[g is the acceleration due to gravity and
+Mo is the permeability of free space.]
+MOI
+ZMOI
+(1)
+(2)
+14. A beam of light falls on a metal surface
+such that photo-electrons are
+generated. If power of the light source
+starts to decrease linearly with time t,
+then variation of the photocurrent I and
+magnitude of the stopping potential V
+with time is best represented by :
+(1)
+(2)
+(3)
+(4)
+MOI
+2T1g
+(3)
+12. An ac voltage V=220 sin(2 × 103t) Volt
+is applied to a series LCR circuit. Then
+the current amplitude in this circuit is :
+(Given : L= 10 mH, C=25uF, R= 100 Q)
+(1) 5.5 A
+(2) 11.0 A
+(3) 22.0 A
+(4) 2.2 A
+(4)
+
+7
+80
+15. Two planets P1 and P2 with equal mass
+have radii R1 and R2, respectively,
+where R2-R1. The escape speeds of
+P1 and P2 are u1 and U2, respectively.
+Then
+is :
+VI
+(1) 1
+(2)
+V2
+(3) 2
+(4)
+V2
+16. A unit positive point charge is taken
+slowly through an infinitesimally thin
+tube that is inside a charged dielectric
+sphere of radius R, having uniform
+positive charge density p, as shown in
+the figure. The initial and final positions
+of the charge are marked by A and B at
+distances 2R and 3R respectively, from
+the centre of the sphere.
+process, the magnitude of the total work
+done on the point charge is
+NEO
+value of n is :
+(€ is the permittivity of vacuum)
+The
+3R
+2R
+p
+(_)
+(3)
+6
+18
+9
+2
+17. One mole of an ideal monatomic gas
+undergoes a cyclic process as shown in
+the figure.
+The total heat supplied to
+the gas is :
+IN
+300
+100 -
+V[m]
+(1) 500 J
+(2)
+600 J
+(3) 800 J
+(4)
+400 J
+18. The following table presents the part of
+the electromagnetic spectrum and their
+corresponding major applications.
+Part of the
+electromagnetic
+spectrum
+Applications
+P Microwave
+UV rays
+R
+Gamma rays
+S
+Radio wave
+For purifying the
+water
+For warming the
+food
+For AM and FM
+III
+communication
+systems
+For treating the
+IV
+Cancer cells
+The correct option is :
+(1) P-I, Q-IV, R-II, S-III
+(2) P-II, Q-I, R-IV, S-III
+(3) P-II, Q-IV, R-III, S-I
+(4)
+P-I, Q-II, R-III, S-IV
+19. A car travels on a circular racetrack of
+radius 50 m, which is banked at an
+angle 0.
+If the car travels at a speed
+10 ms-1, then the wear and tear on its
+tyres is minimum. Taking the
+acceleration due to gravity to be
+10 ms -2, the value of 0 is :
+()
+tan 1(2)
+5
+(2)
+tan (V3/2)
+(3)
+tan (2V3)
+(4)
+tan]
+20. Consider a particle moving along a
+straight line, whose position as a
+function of time is given
+s(t) = at? - Bt +y, where a =1 ms-by
+ß=6 ms-1 and y=5 m. The average
+speed of the particle, in ms- 1, from t=0
+to t=6 s is :
+(1)
+(3)
+(2)
+(4)
+3
+12
+
+80
+21. A point charge Q is placed inside a cavity
+within a solid isolated conducting
+sphere. Consider points A, B and C as
+shown in the figure, where the
+magnitudes of the electric fields are EA,
+Ep and Ec, respectively. The points B
+and C are at the same distance from
+the center of the solid sphere. The
+correct option is :
+8
+23. A ray of light with wavelength \ is
+incident
+on
+three
+different
+photo-electric cells namely 1, 2 and 3.
+The threshold wavelength of these
+photo-electric cells are 11, 1½, and A3,
+respectively and the magnitude of
+stopping potentials of these cells are V1,
+V2 and V3, respectively. The relation
+between 1 and threshold wavelengths
+are 11<1, 12 > 1 and 13 > 1. The correct
+option is :
+(1) V1=0, V2 > V3
+(2) V1 > V2, V3=0
+(3) V1 < V2, V3=0
+(4) V1 = 0, V2 < V3
+(1) EA#O, EB=EC
+(2) FA=O, EB > EC
+(3) EA #0, EB < EC
+(4) EA =0, EB=EC
+24. A current Io flows through a metallic
+circular loop of radius r as shown in the
+figure. Resistance of the segment ABC
+is half that of ADC. Magnitude of
+magnetic field at the center O of the
+22. In the measurement of viscosity of
+liquids using terminal velocity
+loop is :
+experiment, spherical balls of same
+radius but having different densities are
+used. The variation of the terminal
+velocity (v) with the ratio of density of
+B
+spherical ball (ơ) to density of the
+liquid (p), is best represented by :
+(2)
+→ ơ/p
+(3)
+(4)
+(1)
+(3)
+но-0
+4r
+ноt0
+2Tr
+(2)
+(4)
+н010
+2r
+MOTO
+12r
+25. A particle of mass M moves along a
+horizontal x axis from x=0 to x= L. The
+coefficient of kinetic friction varies as a
+function of x as Mr (x) = No - ax, where Mo,
+a are constants of appropriate
+dimensions, so that M (L) =0. The total
+work done by the frictional force during
+the motion is nu MgL, where g is the
+acceleration due to gravity. The value
+of n is :
+(1) 1
+(2)
+1
+3
+(3)
+(4) 3
+2
+
+9
+80
+26. In a solar system, the time-period of
+29. An ideal Zener diode with breakdown
+revolution of a planet tracing a circular
+voltage of -3 V is reverse biased with a
+orbit of radius R is proportional to :
+negative input voltage V; = -5 V. The
+(_)
+R3/2
+(2)
+RZ
+magnitude of voltage difference between
+(3)
+R3
+(4) R1/2
+points B and A is :
+27. A solid sphere A of radius R and mass
+M is attached at a point to a smaller
+solid sphere B of radius r < R and mass
+m < M. Assume that the line joining
+their centres lies along the horizontal.
+The moment of inertia of the system
+calculated about a vertical axis passing
+through the centre of A is A and that
+calculated about a vertical axis passing
+through the centre of B is Ip. The
+difference IA - 1B iS :
+(1) 2 V
+(2) 1 V
+(3) OV
+I B
+(4) 3 V
+(1)
+(3)
+(m- M)(R+r)2 (2)
+(4)
+(m - M)(R- r)
+(M- (R+r)2
+28. The lens combination as shown in the
+figure, consists of two lenses, Ly and
+L2, of the focal lengths + 10 cm and
+- 10 cm, respectively. The position of
+the image formed is :
+41
+L2
+30. Three identical capacitors P, Q and S,
+each of the capacitance
+connected to a battery of voltage V. as
+shown in the figure.
+If the energy
+stored in the capacitor P and total
+energy stored in the system are Up and
+Up
+Up, respectively, then the ratio Ur
+is :
+(1)
+(2)
+(3)
+(4)
+30 cm
+lens
+lens
+lens
+lens
+3 cm
+60 cm to the left of the concave
+30 cm to the right of the concave
+60 cm to the right of the concave
+20 cm to the left of the concave
+(1) 1/3
+(2) 1/2
+(3) 1/6
+(4) 2/3
+
+80
+10
+31. A conducting loop of finite resistance
+32. Consider two circuits, (A) and (B), each
+lies on the x - y plane. There is a
+having two resistors. One of them has
+constant magnetic field in the z
+a positive temperature coefficient of
+direction. The area of the loop varies
+resistance, + a, while the other one has
+with time t, as A=A (1+ sin t) in
+a negative temperature of coefficient,
+appropriate units. The figure that
+-a, as shown in the figure. The current
+correctly indicates the qualitative
+through these circuits are denoted by
+behaviour of the power P dissipated in
+I and Ip. At initial temperature, the
+the loop as a function of time is :
+resistance of the two resistors is Ro
+As the temperature is increased, the
+correct option that describes the
+variation of current in these circuits
+is :
+Ro (1-aAT)
+Ro (1-aAT)
+Ro (1+asT)
+Ro(1+aAT)
+(B)
+(1)
+I decreases while Ip increases
+(2)
+I increases while I decreases
+(3)
+both I and Ip remain constant
+(4)
+IA remains constant while IB
+increases
+(3)
+33. Bob B of mass m at rest is hanging
+vertically from the ceiling via a massless
+string of length 10 m, as shown in the
+figure. Point mass A of mass m travelling
+horizontally with speed 10 ms-1 hits
+bob B elastically. The bob B rises
+h meter after the collision. Taking the
+acceleration due to gravity g = 10 ms -2
+and neglecting the size of the bob, the
+value of h is :
+B
+(4)
+..→
+10 ms-*
+(1) 7
+(3) 2.5
+(2)
+(4)
+
+11
+80
+34. A cylindrical cork of uniform density
+floats in a liquid of density P1. If the
+cork is depressed slightly and released,
+it oscillates harmonically with time
+period T. If the same cork floats in
+harmonica and rotted,
+another liquid of density P2, then the
+similar oscillation has time period 2T.
+The value of p2/P1 is :
+(1) 2
+(2) 1/2
+(3)
+1/4
+(4) 4
+35. The mean free path of molecules in an
+ideal gas A is half that of another ideal
+gas B. The diameter of the spherical
+molecules of gas A is twice the diameter
+of the molecules of B. If number
+densities of the gases A and B are nA
+and ng, respectively, then the correct
+option is :
+(1)
+nA =213
+(2)
+(3) MAIZMB
+(4) nA=MB
+36. Consider the following nuclear reaction:
+238 U →234Th+ He
+Take masses of 238U, 234Th and 4 He
+as 238.050 u, 234.043 u and 4.003 u,
+respectively. The Q value for the
+reaction, in keV, is :
+[Given : 1 u = 931.5 MeV c-½]
+(1)
+3730
+(2) 3736
+(3)
+3740
+(4) 3726
+37. Consider a long solenoid of length l and
+radius r. If n is the number of turns
+per unit length and No is the
+permeability of free space, the
+inductance of the solenoid is :
+(1) Mon-r41
+(2) (Mo/2T)12+21
+38. Which of the following measurements
+require 'index correction' ?
+(1)
+Measurement of gravitational
+acceleration
+using
+simple
+pendulum
+(2)
+Measurement of focal length of
+lenses using optical bench
+(3)
+Measurement of speed of sound
+using resonance tube
+(4)
+Measurement of resistance of a
+wire using meter bridge
+39. The temperature of a metallic sphere
+of radius R is increased by a small
+amount AT. If the linear coefficient of
+thermal expansion of the metal is a, the
+approximate increase in the volume of
+the sphere is :
+(3)
+6пR3a4T
+(2)
+(4)
+2тR3aДT
+40. A photon and an electron, each of
+20 eV energy, move in free space. The
+ratio of linear momentum of electron Pe
+Pe
+to that of photon Pph' Pph
+- 1S :
+(Take speed of light =3 × 108 ms-1,
+charge of electron = - 1.6 × 10-19 C and
+mass of electron = 9 × 10-31 kg)
+(1)
+(2)
+225
+250
+(3) 275
+(4)
+2
+450
+41. Consider that an electron is revolving
+in an excited state of Hydrogen atom
+with velocity V25.6 × 105 ms-1. The
+radius of the orbit is xx 10-9 m. The
+value of x is :
+[Take the mass of electron to be
+9×10-31
+kg,
+charge
+electron
+= - 1.6 × 10-19
+of
+and
+1
+4 TTEO
+• =9 × 109 N m= C-41
+(1)
+(3)
+(½)
+(4)
+2
+4
+
+80
+12
+42. Two identical inductors are connected
+45. A thin horizontal disc is rotating about
+in two different configurations P and Q,
+a vertical axis passing through its fixed
+where a time varying current I(t) is
+centre O. Its angular momentum is LA
+flowing, as shown in the figure.
+The
+and Lp computed about points A and B,
+induced emf between points a and b for
+respectively, with OB =2XOA. The
+configuration P is Ep and that for
+configuration Q is EQ. The ratio Ep/EQ
+value of IB
+LA iS :
+1S :
+[Neglect the effect of
+mutual
+inductance.
+A
+B
+(1)
+2
+(3) 2
+(2)
+(4)
+(Q)
+(P)
+1/2
+(1)
+(3)
+(2)
+(4)
+1/4
+43. In an adiabatic expansion,
+the
+temperature of one mole of an ideal
+monatomic gas (y =5/3) decreases from
+60K to 50K. The work done by the gas
+in the process is :
+(Take the universal gas constant as
+R=8.3 J mol - 1 K-1)
+(1)
+83 J
+(3)
+166 J
+(2)
+(4)
+124.5 J
+41.5 J
+44. Water flows in a streamline motion
+through a horizontal pipe of circular
+cross-section as shown in the figure.
+The pressure difference
+of water
+between P and Q is 15 Nm -2. The area
+of cross-section at P and Q are 40 cm?
+and 20 cm2
+, respectively.
+The rate of
+flow of water through the pipe, in
+cm3s-1, is :
+[Take density of water = 1000 kg m - 3]
+46. Match the species in List I with their
+geometry in List II
+List I
+List II
+A.
+PCI5
+I. Tetrahedral
+B. BrF5
+II. Square Planar
+C. BFf
+III. Trigonal
+bipyramidal
+D. [Ni(CN)4|2- IV. Square pyramidal
+Choose the correct answer from the
+options given below:
+(1) A-III, B-IV, C-I, D-II
+(2) A-III, B-1, C-II, D-IV
+(3) A-III, B-II, C-I, D-IV
+(4) A-IV, B-III, C-I, D-II
+(_)
+(3)
+200
+400
+(2)
+(4)
+300
+100
+47. The amino acid that gives a red-blood
+colour on treating its sodium fusion
+extract with sodium nitroprusside is
+(1) threonine
+(2) methionine
+(3) serine
+(4) leucine
+
+48. Given below are two statements:
+Statement-l
+Oxidation
+of
+p-nitrotoluene with acidic KMnO4 gives
+an acid that is stronger than benzoic
+acid.
+Statement-II
+Reduction
+of
+p-nitrotoluene with Sn/HC followed by
+neutralization gives an amine that is
+more basic than aniline.
+In light of the above statements, choose
+the most appropriate answer from the
+13
+80
+50. The compound that CANNOT
+be
+obtained from the aldol condensation
+reaction shown below, is
+НзС
+NOH, А
++ PhCHO
+НзС
+(1)
+НзС
+Н}С'
+Ph
+(2)
+(1) Both Statement-I and Statement-
+II are incorrect.
+(½)
+Statement-I
+is correct but
+Statement-II is incorrect.
+(3)
+Statement-I is incorrect but
+Statement-Il is correct.
+(4) Both Statement-I and Statement-
+II are correct.
+НзС'
+H3C CH3
+(3)
+НзС
+НзС
+Ph
+(4)
+НзС
+H}С
+49. The standard electrode potential (E°)
+for the half-cell reaction Fe3+ + e
+→
+Fe?+ at 298 K is
+(Given: E°(Fe3+/Fe) = -0.04 V and
+E°(Fe2+/Fe) = -0.44 V at 298 K)
+(1) +0.76 V
+(2) -0.48 V
+(3) +0.92 V
+(4) +0.40 V
+H3C CH3
+51. For a salt XY, which is a strong
+electrolyte, the plot of Am versus Vc
+has a slope of -90.0 S cm- mol-3/2 L1/2
+at 298 K. At 0.01 M concentration of XY,
+the value of Am is 145.0 S cm? mol!.
+The limiting molar conductivity of
+Y-ion (1y-, in S cm? mol-1) at 298 K
+will be
+(Given: 1x+ = 74.0 S cm? mo1-1)
+(1) 100.0
+(2) 90.0
+(3) 76.0
+(4) 80.0
+
+80
+14
+52. Given below are two statements : One
+is labelled as Assertion A and the other
+is labelled as Reason R.
+Assertion A : The first ionization
+enthalpy of O is lower than that of N
+and F.
+Reason R: The loss of an electron
+from O leads to stable half-filled p
+orbital.
+In light of the above statements, choose
+the most appropriate answer from the
+options given below:
+(1) Both A and R are correct and R is
+NOT the correct explanation of A.
+(2) A is correct but R is not correct.
+(3) A is not correct but R is correct.
+(4) Both A and R are correct and R is
+the correct explanation of A.
+53. According to crystal field theory, the
+correct order of ligands with respect to
+their decreasing order of field strength
+is
+(1) CO > H20 > NH3 > CF
+(2) CF > H20 > NH3 > CO
+(3) CF > NH > H20 > CO
+(4) CO > NH > H20 > CL
+54. Given below are two statements:
+Statement-I : [Fe(ox)3]- is chiral.
+Statement-II : trans- [Cr(H20)2(0x)2[ is
+chiral.
+(Given : oxH2 = H00C - COOH)
+In light of the above statements, choose
+the most appropriate answer from the
+options given below:
+(1) Both Statement-I and Statement-
+II are incorrect.
+(2) Statement-I
+is correct but
+Statement-II is incorrect.
+(3) Statement-I is incorrect but
+Statement-II is correct.
+(4) Both Statement-I and Statement-
+II are correct.
+55. For the following reaction sequence,
+choose the correct option
+i. CHICOCI, ALCI3 > P+Q
+ii. NaOCI
+P and Q are aromatic compounds.
+(2) If P gives a carboxylic acid on
+acidification, Q gives a poisonous
+gas on exposure to air and light.
+(3) Both P and Q are carbonyl
+compounds.
+(4) If P is the sodium salt of a
+carboxylic acid, Q is a primary
+alcohol.
+56. For an elementary chemical reaction,
+the Arrhenius plot is given below.
+> 1/7
+If the energy of activation
+is 6.64 kJ
+mol-1 and R = 8.3 J K-1 mol-!, the
+temperature at which the rate constant
+becomes el min-, is
+(1) 150 K
+(3) 250 K
+(2) 200 K
+(4) 125 K
+57. Arrange the following compounds in the
+increasing order of polarity
+A. CH3CH,OCH,CH3
+B. CH3CH,OH
+c. CH3COCH3
+D. CH3COOH
+Choose the correct answer from the
+options given below.
+(1) C < A < D < B
+2) C< A < B< D
+(3) A < C< B< D
+(4) A < B< C<D
+
+15
+80
+58. A protein undergoes reversible thermal
+| 61. Given below are two statements:
+denaturation from its initial state N to
+denatured state D according to N D.
+Statement I:
+At 60 °C, the concentrations of both N
+and D are equal at equilibrium, and the
+trans-But-2-ene upon treatment with
+Br in CCI gives the following product
+standard enthalpy change of denaturation
+is 666 kJ mol!. The standard entropy
+change (AS° in kJ K-'mol) of the protein
+Br
+upon denaturation at 60 °C is closest to
+H\
+• Me
+(1) 2000.0
+(2) 333.0
+(3) 11.1
+(4) 2.0
+• Me
+59. Consider the following statements about
+the solutions formed by mixing two
+liquids.
+A. An ideal solution thus formed obeys
+Raoult's
+law throughout the
+composition range.
+B. Mixture of chloroform and acetone
+shows negative deviation from
+Raoult's law.
+Mixture of aniline and phenol shows
+positive deviation from Raoult's law.
+(1) B and C only
+(2) A only
+(3) A and C only
+(4) A and B only
+60. Given below are two statements:
+Statement-I : Heating NaCl with
+concentrated H2504 and MnO2 results
+in oxidation of Mn.
+Statement-II : Heating Nal with
+concentrated H,SO4 and MnO2 results
+in reduction of Mn.
+In light of the above statements, choose
+the most appropriate answer from the
+options given below:
+(1) Both Statement-I and Statement-
+II are incorrect.
+(2) Statement-I
+is correct but
+Statement-II is incorrect.
+(3) Statement-I
+is incorrect but
+Statement-II is correct.
+(4) Both Statement-I and Statement-
+II are correct.
+Br
+Statement II:
+cis-But-2-ene upon treatment with
+alkaline KMnO4 gives the following
+product
+OH
+„OH
+• Me
+Me
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below.
+(1) Both Statement I and Statement
+II are incorrect
+(2)
+Statement I is correct but
+Statement II is incorrect
+(3)
+Statement I is incorrect but
+Statement II is correct
+(4)
+Both Statement I and Statement
+II are correct
+62. The highest occupied molecular orbital
+for Nez is
+(1) 02p
+(2) T°2p
+(3) 02p
+(4) 72p
+
+80
+63. The following carbocation is stabilized
+by the interaction of the empty p orbital
+with
+16
+68. Given below are two statements: One
+is labelled as Assertion A and the other
+is labelled as Reason R.
+СНЗ
+(1)
+empty o and empty * orbitals
+(2)
+empty o* and filled + orbitals
+(3)
+empty o* and empty "* orbitals
+(4) filled o and filled « orbitals
+64. The green paramagnetic species formed
+by heating KMnO4 at 513 K is
+(1) MnzO4
+(2) MnO
+(3) КОг
+(4) K,MnO4
+65. The correct statement is
+(1) Beryllium has three valence
+orbitals.
+(2) Magnesium has a maximum
+covalency of four.
+(3) Aluminium has five valence
+orbitals.
+(4) Boron has a maximum covalency
+of four.
+Assertion A : Generally, 3d transition
+metals have high melting points.
+Reason R: Involvement of 3d-electrons
+in addition to 4s-electrons in the
+interatomic metallic bonding.
+In light of the above statements, choose
+the most appropriate answer from the
+options given below:
+(1) Both A and R are correct and R is
+NOT the correct explanation of A.
+(2) A is correct but R is not correct.
+(3) A is not correct but R is correct.
+(4) Both A and R are correct and R is
+the correct explanation of A.
+69. Consider the following schematic plots
+of orbital wavefunction (Y,) against
+66. The correct statement about peptides
+distance (r) from the nucleus.
+and proteins is
+(1) Only the proteins having a
+quaternary
+structure
+are
+T
+T
+biologically active.
+(2)
+In ß-pleated sheet structures,
+B
+.....
+(3) In a-helices, the polypeptide chain
+is twisted into a left-handed screw
+(helix) through intramolecular
+hydrogen bonds.
+(4)
+Tertiary structure of proteins has
+two or more polypeptide subunits.
+T
+67. 2A →B is a zero-order reaction, where
+k= 1.0 mol L- min-1.
+If the initial
+concentration of A is 2 M, then the
+time taken to complete 75% of the
+reaction will be
+(1) 0.75 min
+(3) 2.0 min
+(2) 1.0 min
+(4) 1.5 min
+The figure representing two radial nodes
+in the orbital is
+(1) B
+(2) C
+(3) D
+(4) А
+
+17
+80
+70. Identify the reactions which give aniline
+as the major product.
+CN
+73. A 1:3 electrolyte in an aqueous solution
+A.
+LiAIH4 >
+B.
+KOH, Br2
+1S
+(1) [CoCI(NH3)5]C12
+(2) [Co(NH3)6]C13
+(3) CONH3) 3(NO2) 3)
+(4) COC12 (NH3)41C1
+NH2
+NO2
+NaßH4
+C.
+74. Consider the reversible processes for
+1.0 mol of an ideal gas as shown in the
+figure.
+PI: VITI
+CH3
+HCI, H20 →
+Choose the correct answer from the
+options given below.
+(1) B and D only
+(3) C and D only
+(2) A and C only
+(4) A and B only
+71. Among the species given below, the
+spin-only magnetic moment is highest
+for
+(Given : Atomic number of Ti = 22,
+Mn = 25, Fe = 26 and Co = 27)
+(1) [Fe(CN)6]-
+(2) [CO(NH3)613+
+(3) (Ti(H20)613+
+(4) [Mn(CN)6]-
+72. The complex which has facial and
+meridional isomers is
+(Given : py = pyridine and en = H2N-
+CH2-CH2-NH2)
+(1) |Cr(H20)613+
+(2) (Co(NH3)4(H20)2]3+
+(3) [Ni(en)2 (H20121+
+(4) [Cr(py)з (Cl)3]
+1 Pz V2TI
+Pressure
+PA VAIZ
+P3. V3. I2
+Processes 2 and 4 are adiabatic
+Volume - →
+W1, W2, W3 and W4 represent work done
+(in calories) in the processes 1, 2, 3
+and 4, respectively; AU2 and AU4 are
+changes in the internal energy for the
+processes 2 and 4, respectively.
+[use R = 2 cal K-1 mol-!]
+The correct option is
+(1)
+W2 + W4 = 4U2 -AU4
+(2) W1+ W2=2In 2
+(3) WI+ W2+ W3+ W4=0
+(4) Wi+ W3 = -21; In 2 - 2T, In V4
+
+80
+75. In an acidic medium, 10 mL of 0.25 M
+oxalic acid is titrated with KMnO4
+solution. If the volume of KMnO4
+solution required to reach end point is
+10 mL, the strength of the KMnO4
+solution is
+18
+(1) 0.20 M
+(2) 0.25 M
+(3) 0.15 M
+(4) 0.10 M
+76. The lanthanide ion having four unpaired
+electrons is
+(Given : Atomic numbers of Ce =58,
+Nd=60, Tb=65 and Ho=67)
+(1) Ce3+
+(2) Tb3+
+(3) Ho+
+(4) Nd3+
+77. The correct decreasing order of
+oxidation state of the underlined atom
+in each molecule is
+(1) N205 > Al203 > H2S
+(2)
+PbO2 > N203 > S03
+(3)
+P40% > C1207 > AIH3
+(4) P4010 > SO3 > H29
+78. The formula of
+tetraammineaquachloridocobalt (III)
+chloride is
+(1) |CO(NH3)4|C13 × H20
+(2) [Co(NH3)4(H20)C1]C1
+(3) [Co(NH3)4 (H20)CI]CL
+(4) [Co(NH3)4CL2] × H20
+79. Consider the following reaction, and
+choose the correct option.
+СНЗ
+i. CrO2C12. CS2 → P
+ії. H3O™
+(1) Compound P can be prepared by
+treating benzene with anhydrous
+AICI3 and CHCOCI.
+(2) On treatment with bromine water,
+compound P gives a white
+precipitate.
+(3) Compound P is obtained by the
+hydrogenation of benzoyl chloride
+with Pd on BaSO4
+(4) On treating compound P with
+saturated NaHCO3 solution, brisk
+effervescence is observed.
+80. Assertion A :
+For an ideal solution formed by mixing
+liquids P and Q, Amix H = 0 and
+Amix V = O
+Reason R :
+No interactions occur between P and Q
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below.
+(1) Both A and R are correct but R is
+NOT the correct explanation of A
+(Z)
+A is correct but R is not correct
+(3)
+A is not correct but R is correct
+(4)
+Both A and R are correct and R is
+the correct explanation of A
+81. Match the vitamins in List I with their
+sources in List II
+List I
+List II
+A.
+vitamin A
+I.
+meat
+B. vitamin B12 II.
+sunflower oil
+C.
+vitamin E
+III. green leafy
+vegetables
+D. vitamin K TV. carrots
+Choose the correct answer from the
+options given below.
+(1) A-IV, B-1, C-II, D-III
+(2) A-IV, B-II, C-1, D-III
+(3) A-III, B-I, C-IV, D-II
+(4) A-II, B-III, C-IV, D-I
+
+19
+80
+82. Among the following, the compound
+having conjugated double bonds is
+(1) hepta-1,4-diene
+(2) hepta-1,5-diene
+(3) hepta-1,6-diene
+(4) hepta-1,3-diene
+83. One of the products formed in the
+following reaction is
+MgBr +
+- NH2
+| 86. The correct order of solubility of the
+given salts in water at 298 K is
+Ksp at 298 K
+AgBr
+5.0×10-13
+Zn(OH)2
+1.0×10-15
+Hg2C12
+1.3×10-18
+(1) AgBr > Zn (OH)2 > Hg2C12
+(2) Hg2Cl2 > AgBr > Zn(OH)2
+(3) Zn(OH)2 > AgBr > Hg2C12
+(4) Hg2C12 > Zn(OH)2 > AgBr
+(1)
+00
+NH2
+(2)
+87. Consider the following reaction
+sequences and choose the correct
+option.
+I < Naliq. NII3 Ph-C=C-Me
+H12, Pd/C
+→ K
+HBr
+(Lindlar's Catalyst) | HBr
+benzoyl peroxide
+(3)
+(4)
+(1)
+K and L are enantiomers
+(2)
+M and N are geometrical isomers
+(3) M and N are stereoisomers
+(4) K and I are geometrical isomers
+88. The amount of carbon dioxide evolved
+upon complete combustion of 116 g of
+n-butane is
+(Given: atomic mass in amu H = 1, C= 12
+84. Two moles of an ideal gas undergo free
+and O= 16)
+expansion from 10 L to 100 L at 300 K.
+(1) 322 g
+(2) 176 g
+The values of AS system and ASsurroundings
+(3) 362 g
+(4) 352 g
+are
+(R is universal gas constant)
+(1) ASsystem = 4.606 R; 4S surroundings =
+- 4.606 R
+(2) ASsystem = 0; AS surroundings = 4.606 R
+(3) ASsystem = 4.606 R; AS surroundings = 0
+(4) ASsystem =0; ASsurroundings =0
+89. The numbers 17.0145 and 21.0235 were
+rounded to three figures after the
+decimal point. The resulting numbers,
+respectively, are
+(1) 17.015 and 21.023
+(2) 17.014 and 21.024
+(3)
+17.015 and 21.024
+(4)
+17.014 and 21.023
+85. Among the following options, the correct
+trend in the electron gain enthalpy is
+(1) Br > C1 > F > I
+(2)
+C1 > F > Br > I
+(3)
+I > Br >
+C1 > F
+(4)
+F > C1 > Br > I
+90. In potash alum, the ratio of K+ and SO?
+ions is
+(1) 2:1
+(3) 3:2
+(2) 2:3
+(4) 1:2
+
+80
+20
+91. The number of vertebrae in a human is
+| 95. Match List-I with List-lI.
+(1)
+(3)
+12
+206
+(2)
+26
+(4)
+7
+92. Which one of the following statements
+is incorrect ?
+(1)
+a-cells of pancreas secrete insulin
+(2)
+Glucagon stimulates glycogenolysis
+(3)
+B-cells of pancreas secrete insulin
+(4)
+a-cells
+of pancreas secrete
+glucagon
+93. Given below are two statements :
+Statement I : The class name Reptilia
+refers to creeping or crawling mode of
+locomotion.
+Statement II: All organisms belonging
+to Reptilia have three chambered heart.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+(1)
+Both Statement I and Statement
+II are incorrect
+(Z)
+Statement I is correct but
+Statement II is incorrect
+(3)
+Statement I is incorrect but
+Statement II is correct
+(4)
+Both Statement I and Statement
+II are correct
+94. Which of the following statements
+related to pituitary gland are correct?
+(a) It is divided anatomically into
+adenohypophysis
+and
+neurohypophysis
+(b)
+It secretes follicle stimulating
+hormone
+(c)
+It secretes melanocyte stimulating
+hormone
+(d) It does not secrete prolactin
+Choose the correct answer from the
+options given below :
+(1)
+(a), (b) and (c) only
+(½)
+(c) and (d) only
+(3)
+(b) and (c) only
+(4)
+(a) and (b) only
+List-I
+A. Starch
+B. Antibody
+C. Concanavalin A
+List-II
+1. Fights infection
+II. Energy storage
+III. Glucose
+transport
+D. Glut-4
+IV. Lectin
+Choose the correct answer from the
+options given below :
+(1) A-II, B-1, C-IV, D-III
+(2) A-II, B-1, C-III, D-IV
+(3)
+A-I, B-II, C-III, D-IV
+(4)
+A-I, B-II, C-IV, D-III
+96. In water, frogs respire using
+(1) buccal cavity (2) lungs
+(3)
+trachea
+(4) skin
+97. Match List-I with List-II.
+List-I
+A. Cristae
+List-II
+Flat membrane sacs
+in stroma of
+chloroplast
+B. Cisternae
+II. Infoldings in
+mitochondria
+C. Thylakoids III. Cell membrane
+D. Phospholipid IV. Disc shaped sacs in
+the Golgi apparatus
+Choose the correct answer from the
+options given below :
+(1) A-II, B-IV, C-I, D-III
+(2) A-II, B-IV, C-III, D-I
+(3) A-IV, B-III, C-I, D-II
+(4) A-III, B-IV, C-1, D-II
+98. Phyllotaxy is the pattern of arrangement
+of
+(1)
+flowers
+(3)
+sepals
+(2)
+fruits
+(4) leaves
+
+99. Match List-I with List-II.
+List-I
+List-II
+A.
+Spherical
+Vibrio
+B. Rod
+Cocci
+C. Comma
+Spirilla
+D. Spirillum
+IV. Bacilli
+Choose the correct answer from the
+options given below :
+(1)
+A-III, B-II, C-I, D-IV
+(2)
+(3)
+A-II, B-I, C-IV, D-III
+A-II, B-IV, C-I, D-III
+(4)
+A-I, B-!!!, C-II, D-IV
+100.Arrange the following elements in
+descending order of their contribution
+to percentage weight of the human body.
+Oxygen
+(c) Hydrogen
+(d) Nitrogen
+Choose the correct answer from the
+options given below :
+(c), (a), (b), (d)
+(b), (c), (a), (a)
+(b), (a), (c), (d)
+(a), (b), (c), (d)
+101. Length of the stem at time 0 is 20 cm.
+The arithmetic growth rate is 30 cm per
+day. What is the length of the stem at
+the end of the 7th day?
+(1)
+170 cm
+(2)
+(3)
+460 cm
+(4)
+230 cm
+50 cm
+102. Given below are two statements :
+Statement I: In gymnosperms, the
+male and female gametophytes remain
+within the sporangia.
+Statement II: In gymnosperms, seeds
+are not covered.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+(1)
+Both
+Statement
+and
+Statement II are incorrect
+(2)
+Statement I is correct but
+Statement II is incorrect
+(3)
+Statement I is incorrect but
+Statement II is correct
+(4)
+Both Statement I and Statement
+II are correct
+21
+80
+103. Smooth
+endoplasmic reticulum
+(1)
+is the major site for the synthesis
+of lipids
+(2)
+is actively involved in protein
+synthesis
+(3) is a site for the synthesis of
+carbohydrates
+(4)
+has ribosomes attached to its
+surface
+104. Which of the following is not a
+characteristic of chordates ?
+(1) Central nervous system is dorsal
+(2) Absence of gills
+(3)
+Presence of post anal part (tail)
+(4)
+Presence of notochord
+105. How many molecules of pyruvic acid are
+produced at the end of glycolysis from
+206 molecules of glucose ?
+(1)
+309
+(2) 103
+(3) 412
+(4) 206
+106. The correct sequence of adult cell cycle
+phases is
+(1) G1-M-G2-S
+(3) S-M-G2-G1
+(2) G1-S-G2-M
+(4) G1-G2-S-M
+107. Which of the following represents the
+correct sequence of arrangement of
+bones in the lower limb of humans?
+(1)
+Patella-femur-tibia-tarsal
+(2)
+Femur-patella-tibia-tarsal
+(3)
+Femur-tarsal-patella-tibia
+(4)
+Femur-tibia-patella-tarsal
+108. Cell theory was formulated by
+(1)
+(2)
+(3)
+(4)
+Robert Brown
+Singer and Nicolson
+Antonie Von Leeuwenhoek
+Schleiden and Schwann
+
+80
+22
+109. Given below are two statements :
+Statement I: Chromosomes are fully
+condensed at the end of prophase I.
+Statement II: Meiosis I resembles
+mitosis.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+(1)
+Both
+Statement
+and
+Statement II are false
+(2)
+Statement I is correct, but
+Statement II is false
+(3)
+Statement I is incorrect, but
+Statement II is true
+(4)
+Both Statement I and Statement
+II are true
+110. Which of the following statements
+regarding photorespiration are correct?
+(a)
+Do not occur in C3 plants
+(b)
+CO2 is consumed and O2 is
+generated
+(c)
+Phosphoglycolate is formed
+(d) No synthesis of ATP and NADPH
+Choose the correct answer from the
+options given below :
+(1) (c) and (d) only
+(2) (b) and (d) only
+(3)
+(a) and (b) only
+(4)
+(a) and (d) only
+111. Which
+of the
+following
+are
+characteristics of prokaryotic cells ?
+(a) Ribosomes are made of 50S and
+30S subunits
+(b)
+They can have plasmids
+(c)
+They contain mesosome
+(d) They have peroxisomes
+Choose the correct answer from the
+options given below :
+(1) (a) and (c) only
+(2) (a), (c) and (d) only
+(3) (a), (b) and (c) only
+(4)
+(b) and (c) only
+112. The number of action potentials
+generated by sino-arterial node (SAN)
+in a healthy human is
+per
+minute.
+(1) 70-75
+(3) 120 - 140
+(2)
+100 - 110
+(4) 28-30
+113.Endomembrane system includes
+(1)
+endoplasmic
+reticulum,
+chloroplast, peroxisomes and
+vacuole
+(2)
+mitochondria,
+chloroplast,
+peroxisomes and vacuole
+(3)
+Golgi
+complex, chloroplast,
+peroxisomes and vacuole
+(4)
+endoplasmic reticulum, Golgi
+complex, lysosomes and vacuole
+114. Match List-I with List-II.
+List-I
+List-II
+A.
+Family I.
+Sapindales
+B. Genus II. Dicotyledonae
+C.
+Class
+mI.
+Anacardiaceae
+D.
+Phylum IV. Angiospermae
+E.
+Order V.
+Mangifera
+Choose the correct answer from the
+options given below :
+(1)
+A-II, B-I, C-III, D-IV, E-V
+(2)
+A-II, B-III, C-V, D-I, E-IV
+(3)
+A-III, B-V, C-II, D-IV, E-I
+(4)
+A-I, B-V, C-II, D-IV, E-III
+115. Which of the following plant growth
+regulators
+promotes
+internode
+elongation prior to flowering in cabbage?
+(1)
+Gibberellin
+(2)
+Indole butyric acid
+(3)
+Ethephon
+(4)
+Abscisic acid
+116. The plastid that stores xanthophyll is
+known as
+(1) chromoplast
+(3) amyloplast
+(2)
+(4)
+aleuroplast
+chloroplast
+
+23
+117. Photorespiration reaction catalyzed by
+121. Mitochondrial
+RuBisCo is shown below :
+RuBP + 02 → 3-Phosphoglycerate + X
+Identify "X" from the given options:
+(1)
+2-Phosphoglycolate
+(2)
+Oxaloacetate
+(3)
+Malate
+(4)
+Phosphoenolpyruvate
+118. Match List-I with List-II.
+List-I
+A. Marginal placentation
+B. Axile placentation
+C. Parietal placentation
+D. Free central
+List-lI
+1. Argemone
+II. Tomato
+III. Primrose
+IV. Pea
+placentation
+Choose the correct answer from the
+options given below :
+(1)
+A-IV, B-II, C-III, D-I
+(2)
+A-IV, B-III, C-I, D-II
+(3)
+A-IV, B-II, C-I, D-III
+(4)
+A-II, B-IV, C-I, D-III
+119. Which of the following are characteristic
+features of Solanaceae family?
+Flowers
+bisexual
+and
+actinomorphic
+Calyx have five sepals and are
+(c)
+Androecium have five stamens and
+are epipetalous
+(d)
+Ovary is inferior
+Choose the correct answer from the
+options given below :
+(1) (d) only
+(2)
+(a) and (b) only
+(3) (b), (c) and (d) only
+(4)
+(a), (b) and (c) only
+120. Which pigment has absorption peak at
+700 nm in the photosynthetic reaction
+centre PS I (P700) ?
+(1)
+Chlorophyll a (2)
+Xanthophylls
+(3)
+Carotenoids
+(4)
+Chlorophyll b
+80
+membrane
+(3)
+(4)
+aqueous humor
+matrix
+122. Which of the following statements is
+incorrect ?
+(1)
+Blood clot consists of fibrins
+(2)
+Fibrin is produced from fibrinogen
+(3)
+(4)
+Fibrinogen is produced from fibrin
+Blood coagulates in response to an
+injury
+123. Symbiotic association between fungi
+and algae are called
+(1)
+sponges
+(2)
+mycorrhiza
+(3)
+chrysophytes (4) lichens
+124. Which of the following is not a part of
+human central neural system ?
+(1) Dura mater
+(2) Pia mater
+(3) Pericardium (4) Arachnoid
+125. Which of the following plant growth
+regulators is used as herbicide ?
+(1) Kinetin
+(2) Abscisic acid
+(3) Gibberellin (4) 2,4-D
+126. How many turns of Calvin cycle are
+required for the formation of three
+molecules of glucose ?
+(1) 3
+(3) 18
+(4) 6
+127.Arrange the following taxonomic
+categories in ascending order.
+(a) Genus
+(b)
+Class
+(c) Order
+(d)
+Phylum
+(e) Family
+Kingdom
+(g) Species
+Choose the correct answer from the
+options given below :
+(1) (a), (c), (d), (g), (1), (b), (e)
+(2) (g), (c), (d), (b), (e), (a), (f)
+(3) (f), (c), (b), (g), (d), (e), (a)
+(4)
+(g), (a), (e), (c), (b), (d), (f)
+
+80
+24
+128. In frogs, the number of pairs of cranial
+nerves arising from the brain are
+| 132.Which of the following is not a
+prokaryote ?
+(1) Blue green algae
+(1)
+(3)
+12
+(2)
+(4)
+10
+6
+(2) Mycoplasma
+(3) Fungi
+(4) Bacteria
+129. Select the correct sequence
+of
+experiments that led to a gradual
+understanding of photosynthesis in
+green plants.
+Role of air → release of oxygen →
+production of glucose → absorption
+spectra of chlorophyll a and b
+(2) Release of oxygen → production of
+glucose → absorption spectra of
+chlorophyll a and b → role of air
+(3) Production of glucose → role of air
+→ release of oxygen → absorption
+spectra of chlorophyll a and b
+(4)
+Absorption spectra of chlorophyll a
+and b → production of glucose →
+release of oxygen → role of air
+130. Sphenopsida class belongs
+to
+(3)
+angiosperms
+(2)
+gymnosperms
+pteridophytes (4)
+bryophytes
+131. Match List-I with List-II.
+List-I
+A. Fusion of
+List-II
+I. Meiosis
+protoplasms
+between gametes
+B. Fusion of two
+II. Plasmogamy
+nuclei
+C. Generation of
+III. Karyogamy
+haploid spores
+Choose the correct answer from the
+options given below :
+(1) A-II, B-1, C-III
+(2) A-III, B-II, C-I
+(3) A-I, B-III, C-II
+(4) A-II, B-III, C-I
+133. Given below are two statements :
+Statement 1: When any plane passing
+through the central axis of the body
+divides the organism into two identical
+halves, it is called radial symmetry.
+Statement II: In phylum
+Echinodermata, both adults and larvae
+are radially symmetrical.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below:
+(1)
+Both Statement I and Statement
+I are incorrect
+(2)
+Statement I is correct but
+Statement II is incorrect
+(3)
+Statement I is incorrect but
+Statement II is correct
+(4)
+Both Statement I and Statement
+II are correct
+134. Genus represents
+(1)
+a population of plants and animals
+(2)
+a group of closely related species
+(3)
+a group of closely related families
+(4) an individual plant or animal
+135. Mad cow disease is caused by
+(1)
+viroids
+(2)
+Aspergillus sp.
+(3)
+Mycoplasma sp.
+(4)
+prions
+136. The opening between the right atrium
+and the right ventricle is guarded by
+(1)
+tricuspid valve
+(2)
+semilunar valve
+(3)
+sino-atrial node
+(4)
+bicuspid valve
+
+25
+80
+137. The inactive form of Bt toxin is
+converted to the active form in the
+insect gut
+(1)
+due to acidic pH
+(2) by proteases
+(3) by nucleases
+(4)
+due to alkaline pH
+138. Match List-I with List-II.
+List-I
+A. Transformation
+List-lI
+Restriction
+enzyme
+B. Cloning site
+Transfer DNA
+to host
+bacteria
+C. Selection
+II.
+Replication
+D. Ori
+IV. Antibiotic
+Choose the correct answer from the
+options given below :
+(1)
+A-I, B-II, C-IV, D-III
+(2) A-III, B-IV, C-II, D-I
+(3) A-IV, B-1, C-III, D-II
+(4) A-II, B-1, C-IV, D-III
+139. How many theca are present in each
+lobe of a typical bilobed angiosperm
+anther ?
+(1) 6
+(3)
+12
+(2)
+(4)
+8
+2
+140. Which of the following hormone is not
+secreted by human placenta?
+(1)
+Estrogen
+(2) Progesterone
+(3) LH
+(4) hCG
+141. Sperm motility is due to
+(1)
+ciliary movement
+(2)
+amoeboid movement
+(3) muscular movement
+(4) flagellar movement
+142. Given below are two statements : one
+is labelled as Assertion A and the other
+is labelled as Reason R.
+Assertion A : In an experiment, Mendel
+observed that the F1 progeny plants are
+all tall and none are dwarf.
+Reason R :
+Stem height is a
+contrasting trait, with tall being
+dominant and dwarf being recessive.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+(1)
+Both A and R are correct but R is
+not the correct explanation of A
+(2)
+A is correct but R is not correct
+(3)
+A is not correct but R is correct
+(4)
+Both A and R are correct and R is
+the correct explanation of A
+143. During PCR, primers bind to the DNA
+strands in the
+step.
+(I)
+extension
+(3) ligation
+(2)
+(4)
+annealing
+denaturation
+144. Which of the following plant produces
+non-albuminous seeds ?
+(1)
+Maize
+(2)
+(3) Pea
+(4)
+Barley
+Wheat
+145. For a person with blood group 'O', which
+of the following is not a possible
+combination of parents' blood group
+genotypes ?
+(1)
+Father : Ai and Mother: Hi
+(2)
+Father : Pi and Mother : Bi
+(3)
+Father : AB and Mother : Ai
+(4)
+Father: Ai and Mother: Bi
+146. Which of the following is used as a clot
+buster ?
+(1) Penicillin
+(2) Cyclosporin A
+(3) Statins
+(4) Streptokinase
+
+80
+26
+147. Arrange the following in descending
+order of number of species in the
+in dies in ding 150, Which ofore for
+150. Which of the following statements about
+the reabsorption process in Henle's loop
+Amazonian rain forest.
+are correct ?
+(a) Plants
+(b)
+Birds
+(a)
+The descending limb of Henle's loop
+(c) Fishes
+(d) Invertebrates
+is permeable to water but almost
+(e) Mammals
+impermeable to electrolytes.
+Choose the correct answer from the
+(b)
+Urine gets concentrated in Henle's
+options given below :
+loop.
+(1) (d) > (a) > (c) > (b) > (e)
+(c)
+Reabsorption of Na+ and water
+(2)
+(e) > (b) > (a) > (c) > (d)
+takes place in Henle's loop.
+(3) (b) > (a) > (d) > (c) > (e)
+(a)
+Active or passive transport of
+(4)
+(c) > (b) > (d) > (e) > (a)
+electrolytes
+occurs
+in
+the
+ascending limb of Henle's loop.
+148. Given below are two statements :
+Statement I :
+Choose the correct answer from the
+options given below :
+Plasmids are autonomously replicating
+DNA.
+(1) (b), (c) and (d) only
+Statement II :
+(2) (a), (b) and (c) only
+Plasmids are extrachromosomal DNA.
+(3) (a), (b) and (d) only
+In the light of the above statements,
+choose the most appropriate answer
+(4) (a) and (b) only
+from the options given below:
+Both Statement I and Statement
+Il are incorrect
+(2)
+Statement I is correct but
+Statement II is incorrect
+(3)
+Statement I is incorrect but
+Statement Il is correct
+(4)
+Both Statement I and Statement
+Il are correct
+151. Which of the following are secondary
+lymphoid organs ?
+(a) Bone marrow (b) Tonsils
+(c) Spleen
+(d) Thymus
+Choose the correct answer from the
+options given below :
+(1) (b) and (c) only
+149. Given below are two statements : one
+(2) (b) and (d) only
+is labelled as Assertion A and the other
+(3) (a) and (d) only
+is labelled as Reason R.
+(4) (a) and (b) only
+Assertion A : Forelimbs of human and
+bats are homologous.
+Reason R:
+Forelimbs of humans
+and bats have similar anatomical
+structure.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+Both A and R are true, but R is
+not the correct explanation of A
+A is true but R is false
+A is false but R is true
+(4)
+Both A and R are correct and R is
+the correct explanation of A
+152. Which of the following is the correct
+order of arrangement of vertebrate
+column from the head to toe ?
+(1)
+Sacrum, lumbar vertebra, thoracic
+vertebra, cervical vertebra
+(2)
+Cervical vertebra, lumbar vertebra,
+thoracic vertebra, sacrum
+(3)
+Cervical
+vertebra,
+thoracic
+vertebra, lumbar vertebra, sacrum
+(4)
+Cervical vertebra,
+thoracic
+vertebra, sacrum, lumbar vertebra
+
+27
+153. If the diploid chromosome number of
+typical angiosperm is 36, what would be
+the chromosome number in its
+endosperm ?
+157. Match List-I with List-II.
+List-I
+A. Excess growth I.
+hormone
+(1) 36
+(2) 54
+(3) 72
+(4) 18
+80
+154. Sponges exchange 02 with CO2 by
+(1) moist cuticle
+2) tracheal tubes
+(3) gills
+(4)
+simple diffusion over their entire
+body surfaces
+155. Which of the following disease is not
+sexually transmitted?
+(1) Tuberculosis
+(2) Gonorrhoea
+(3) Genital warts
+(4) Syphilis
+156. Which of the following in female
+gametophyte of an angiosperm helps in
+guiding the pollen tube for fertilizing the
+eggs ?
+(1) Synergids
+(2) Central cells
+(3) Polar nucleus
+(4) Antipodals
+List-II
+Reabsorption
+of water and
+electrolytes in
+kidney
+B.
+Luteinizing
+hormone
+II. Contraction of
+uterus during
+child birth
+C. Vasopressin
+III. Acromegaly
+D. Oxytocin
+IV. Ovulation
+Choose the correct answer from the
+options given below :
+(1)
+A-III, B-IV, C-I, D-II
+(2)
+A-II, B-IV, C-I, D-III
+(3)
+A-IV, B-III, C-I, D-II
+(4)
+A-III, B-IV, C-II, D-I
+158. The covering of ovum at ovulation is
+(1)
+(2)
+(3)
+(4)
+zona radiata
+zona pellucida
+chorion
+endometrium
+159. Match List-I with List-II.
+List-I
+A. Both species
+I.
+List-II
+Predation
+are harmed
+B. One species is
+II.
+Mutualism
+harmed and the
+other is benefited
+C. Both species are III. Competition
+benefited
+D. One is benefited IV. Commensalism
+while the other
+has no effect
+Choose the correct answer from the
+options given below :
+(1)
+A-I, B-II, C-III, D-IV
+(2)
+A-II, B-I, C-IV, D-III
+(3)
+A-III, B-I, C-II, D-IV
+(4)
+A-III, B-IV, C-II, D-I
+
+80
+28
+160. Which of the following structure is not
+164. Which of the following statements is
+a part of the male reproductive
+correct about Plasmodium?
+system ?
+(1) Reproduces sexually in RBCs
+(1) Epididymis
+(2)
+Gametocytes develop in mosquito
+(2) Vasa efferentia
+gut
+(3)
+Fertilization takes place in
+(3) Infundibulum
+mosquito gut
+(4) Rete testis
+(4)
+Reproduces sexually in liver cells
+161. Which of the following are primary
+consumers in a food chain ?
+(1)
+Predators
+(2) Herbivores
+(3) Carnivores
+(4)
+Parasites
+162. Given below are two statements: one
+is labelled as Assertion A and the other
+is labelled as Reason R.
+Assertion A : Abingdon tortoise in
+Galapagos islands became extinct
+within a
+decade after goats were
+introduced.
+Reason R:
+Goats
+were
+more
+efficient at browsing than Abingdon
+tortoise.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+(1) Both A and R are correct but R is
+not the correct explanation of A
+(2) A is correct but R is not correct
+(3)
+A is not correct but R is correct
+(4)
+Both A and R are correct and R is
+the correct explanation of A
+163. Which of the following statements about
+lac-operon is correct ?
+(1)
+Lactose activates repressor to bind
+to the operator
+(2)
+Genes i, z, y and a share single
+common promoter
+(3)
+Galactose can act as an inducer of
+lac operon
+(4) Gene i is constitutively expressed
+165. A population of diploid organisms is at
+Hardy-Weinberg equilibrium. If the
+frequency of allele A is 0.1, the
+frequency of AA is
+(1) 0.02
+(3)
+0.99
+(2)
+(4)
+0.10
+0.01
+166. Adaptive
+radiation
+in
+placental
+mammals and Australian Marsupials
+leading to similarity between distant
+species is an example of
+(1)
+convergent evolution
+(2)
+founder effect
+(3)
+genetic drift
+(4)
+divergent evolution
+167. Colostrum, secreted by mother during
+initial days of lactation, is abundant in
+(1)
+(3)
+1g M
+IgD
+(2)
+(4)
+IgA
+IgG
+168. Given below are two statements : one
+is labelled as Assertion A and the other
+is labelled as Reason R.
+Assertion A : In recombinant DNA
+technology, lysozyme is used for
+disrupting bacterial cells while cellulase
+is for plant cells.
+Reason R :
+Isolation of genetic
+material needs disruption of cells.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+(1)
+Both A and R are correct but R is
+not the correct explanation of A
+(2)
+(3)
+(4)
+A is correct but R is not correct
+A is not correct but R is correct
+Both A and R are correct and R is
+the correct explanation of A
+
+29
+169. Given below are two statements :
+Statement I: Ovulation is caused by
+LH surge leading to rupture of Graafian
+follicles.
+Statement II : Graafian follicle
+remaining after ovulation transform into
+corpus luteum and secretes large
+amount of estrogen.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+(1) Both Statement I and Statement
+I are incorrect
+(2)
+Statement I is correct but
+Statement II is incorrect
+(3)
+Statement I is incorrect but
+Statement Il is correct
+(4)
+Both Statement I and Statement
+II are correct
+170. Natural
+selection can lead to
+(a)
+stabilisation
+(b)
+genetic drift
+(c)
+directional change
+(d) disruption
+Choose the correct answer from the
+options given below :
+(1) (a), (c) and (d) only
+(2) (a), (b), (c) and (d)
+(3) (a) and (c) only
+(4)
+(a) only
+171. The method of directly of injecting a
+sperm
+into ovum
+in
+assisted
+reproductive technology is called :
+(1)
+Zygote intra fallopian transfer
+(ZIFT)
+(2)
+Intra cytoplasmic sperm injection
+(ICSI)
+(3)
+Embryo transfer (ET)
+(4)
+Gamete intra fallopian transfer
+(GIFT)
+80
+172. Which of the following is used as an
+effective sedative and painkiller for
+treating post-surgery patients ?
+(1) Antibiotics
+(2) Morphine
+(3) Anti-retroviral drugs
+(4) Interferon
+173. Given below are two statements :
+Statement I: Down's syndrome is
+caused by the absence of one of the
+X-chromosomes.
+Statement II: Turner's syndrome is
+caused by the presence of an additional
+copy of the chromosomes.
+In the light of the above statements,
+choose the correct answer from the
+options given below :
+(1)
+Both Statement I and Statement
+II are incorrect
+(2)
+Statement I is correct but
+Statement II is incorrect
+(3)
+Statement I is incorrect but
+Statement Il is correct
+(4)
+Both Statement I and Statement
+II are correct
+174. Which of the following is not evidence
+for evolution ?
+(I)
+Paleontological evidence from fossil
+records
+(2)
+Embryological support for evolution
+as proposed by Ernst Heckel
+(3)
+Divergent evolution of anatomical
+structures such as forelimbs
+(4)
+Convergent evolution of traits like
+wings of birds and butterflies
+
+80
+30
+175. Given below are two statements : one
+| 178. Which of the following statements are
+is labelled as Assertion A and the other
+correct ?
+is labelled as Reason R.
+Assertion A : The logistic growth model
+(a)
+Energy flow from producers to
+consumers is unidirectional
+of populations is considered more
+(b)
+realistic than the exponential growth
+Energy pyramid can never be
+inverted
+model.
+(c)
+Transfer of energy follows the 1%
+Reason R: Resources are finite.
+law
+In the light of the above statements,
+Choose the correct answer from the
+choose the most appropriate answer
+from the options given below :
+options given below :
+(1)
+Both A and R are correct but R is
+(1) (a) and (b) only
+not the correct explanation of A
+(2) (a) and (c) only
+(2) A is correct but R is not correct
+(3) (b) and (c) only
+(3)
+A is not correct but R is correct
+(4) (a), (b) and (c)
+(4)
+Both A and R are correct and R is
+the correct explanation of A
+176. Given below are two statements :
+Statement 1: Modern Homo sapiens
+arose in Australia and moved across
+continents.
+Statement II: Homo sapiens arose
+around 75000 to 10000 years ago.
+In the light of the above statements,
+choose the most appropriate answer
+from the options given below :
+Both Statement I and Statement
+II are incorrect
+(2)
+Statement I is correct but
+Statement Il is incorrect
+(3)
+Statement I is incorrect but
+Statement Il is correct
+(4)
+Both Statement I and Statement
+II are correct
+177. Consider a population of 10 million cells.
+Given the per-capita birth rate of 0.002
+(per unit time) and the per-capita death
+rate of 0.002 (per unit time), the
+expected number of cells after 10
+generations is
+5 million
+(½)
+10 million
+(3) 100 million
+(4)
+1 million
+179. Muscle contraction is initiated by a
+signal sent by the central nervous
+system by the release of
+(1)
+acetyl coenzyme A
+(2)
+cyclic guanine monophosphate
+(3)
+cyclic adenine monophosphate
+(4)
+acetyl choline
+180. Which of the following enzymes
+synthesizes precursor mRNA ?
+(1)
+RNA polymerase II
+(2)
+RNA polymerase III
+(3)
+DNA polymerase
+(4) RNA polymerase I
+- 000-
+
+31
+Space For Rough Work
+80
+
+80
+32
+Space For Rough Work

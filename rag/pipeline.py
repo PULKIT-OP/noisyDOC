@@ -6,12 +6,16 @@ import os
 def _document_store_dir(document_id: str) -> str:
     return FaissVectorStore.make_persist_dir("faiss_store", document_id)
 
-def run_ingest(file_path: str, document_id: str):
-    docs = load_document(file_path)
+def run_ingest(file_path: str, document_id: str, progress_callback=None):
+    docs = load_document(file_path, progress_callback=progress_callback)
     if not docs:
         return False
+    if progress_callback:
+        progress_callback(75, "Extracted text. Building embeddings...")
     store = FaissVectorStore(_document_store_dir(document_id))
     store.build_from_documents(docs)
+    if progress_callback:
+        progress_callback(95, "Saving document in the vector store...")
     return True
 
 def run_query(question: str, document_id: str, top_k: int = 3):

@@ -2,18 +2,43 @@ const axios = require("axios");
 const fs = require("fs");
 const FormData = require("form-data");
 
-const RAG_URL = process.env.RAG_SERVICE_URL || "http://localhost:8000";
+const RAG_URL = process.env.RAG_SERVICE_URL || "http://127.0.0.1:8000";
+const RAG_STARTUP_RETRIES = 10;
+const RAG_RETRY_DELAY_MS = 1000;
+
+const wait = (milliseconds) =>
+  new Promise((resolve) => setTimeout(resolve, milliseconds));
 
 // called when user uploads a PDF
-const ingestDocument = async (filePath, fileName, pdfId) => {
-  const formData = new FormData();
-  const fileStream = fs.createReadStream(filePath);
-  formData.append("file", fileStream, fileName);
-  formData.append("pdf_id", pdfId);
+const ingestDocument = async (filePath, fileName, pdfId, progressToken) => {
+  for (let attempt = 1; attempt <= RAG_STARTUP_RETRIES; attempt += 1) {
+    const formData = new FormData();
+    formData.append("file", fs.createReadStream(filePath), fileName);
+    formData.append("pdf_id", pdfId);
+    formData.append("progress_token", progressToken);
 
-  const response = await axios.post(`${RAG_URL}/ingest`, formData, {
-    headers: formData.getHeaders(),
-  });
+    try {
+      const response = await axios.post(`${RAG_URL}/ingest`, formData, {
+        headers: formData.getHeaders(),
+      });
+      return response.data;
+    } catch (error) {
+      const isConnectionFailure =
+        error.code === "ECONNREFUSED" || error.code === "ECONNRESET";
+      if (!isConnectionFailure || attempt === RAG_STARTUP_RETRIES) {
+        throw error;
+      }
+
+      console.log(
+        `RAG service is not ready; retrying ingestion (${attempt}/${RAG_STARTUP_RETRIES - 1})...`,
+      );
+      await wait(RAG_RETRY_DELAY_MS);
+    }
+  }
+};
+
+const getIngestStatus = async (progressToken) => {
+  const response = await axios.get(`${RAG_URL}/status/${encodeURIComponent(progressToken)}`);
   return response.data;
 };
 
@@ -27,4 +52,4 @@ const queryDocument = async (question, pdfId) => {
   return response.data.answer;
 };
 
-module.exports = { ingestDocument, queryDocument };
+module.exports = { ingestDocument, getIngestStatus, queryDocument };

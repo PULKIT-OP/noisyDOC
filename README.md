@@ -57,14 +57,18 @@ Create a `.env` file in project root (`noisyDOC/.env`) with:
 
 ```env
 GROQ_API_KEY=your_groq_key_here
+OCR_API_KEY=your_ocr_space_api_key_here
+OCR_ENGINE=2
+OCR_LANGUAGE=eng
 JWT_SECRET=your_jwt_secret_here
-RAG_SERVICE_URL=http://localhost:8000 (optional)
+RAG_SERVICE_URL=http://localhost:8000
 ```
 
 Notes:
 
 - `RAG_SERVICE_URL` is optional but recommended.
 - Groq key is used by the Python RAG service for answer generation.
+- `OCR_API_KEY` is required for scanned/image-only PDFs. `OCR_ENGINE` defaults to `2` and `OCR_LANGUAGE` defaults to `eng`.
 
 ## Installation
 
@@ -190,6 +194,7 @@ What helps:
 ### Missing Groq key
 
 - Set `GROQ_API_KEY` in root `.env`.
+- Set `OCR_API_KEY` for scanned/image-only PDFs.
 - Restart services after updating env values.
 
 ## Current Limitations
