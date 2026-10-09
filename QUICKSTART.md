@@ -10,6 +10,19 @@ Before you begin, make sure you have:
 - **Python 3.10+** - [Download here](https://www.python.org/)
 - **MongoDB** - Running locally on `mongodb://127.0.0.1:27017/pdf-chat-app`
 - **Groq API Key** - Get one free from [Groq Console](https://console.groq.com)
+- **Docker Desktop** - Required only for the containerized setup
+
+## Docker setup
+
+For the easiest local installation, install Docker Desktop, copy `.env.example`
+to `.env`, fill in the API keys, and run:
+
+```powershell
+docker compose up --build
+```
+
+Open http://localhost:3000 after the containers report healthy. Compose starts
+MongoDB, the Node backend, and the Python RAG service automatically.
 
 ## Step 1: Clone the Repository
 

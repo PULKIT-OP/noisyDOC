@@ -10,9 +10,12 @@ const multer = require("multer");
 const path = require("path");
 const { getUser } = require("./services/user");
 
+const MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/pdf-chat-app";
+
 // MongoDB Connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/pdf-chat-app")
+  .connect(MONGODB_URI)
   .then(console.log("MongoDb Connected"))
   .catch((err) => {
     console.log("MongoDb Connection Error:", err);

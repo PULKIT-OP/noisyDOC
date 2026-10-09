@@ -51,6 +51,32 @@ noisyDOC/
 - MongoDB running locally (default: mongodb://127.0.0.1:27017/pdf-chat-app)
 - pip (or virtualenv + pip)
 
+## Run with Docker
+
+Install Docker Desktop, copy `.env.example` to `.env`, and set the Groq, OCR.Space,
+and JWT values:
+
+```powershell
+Copy-Item .env.example .env
+docker compose up --build
+```
+
+Open `http://localhost:3000`. Docker Compose starts the Node backend, FastAPI RAG
+service, and MongoDB together. MongoDB, uploaded files, FAISS indexes, and RAG
+documents are kept in named Docker volumes.
+
+Stop the services without deleting data:
+
+```powershell
+docker compose down
+```
+
+To remove the stored database, uploads, indexes, and documents as well:
+
+```powershell
+docker compose down -v
+```
+
 ## Environment Variables
 
 Create a `.env` file in project root (`noisyDOC/.env`) with:

@@ -1,0 +1,58 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD-SHELL", "mongosh --quiet --eval \"db.adminCommand('ping').ok\""]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  rag:
+    image: ${DOCKERHUB_USERNAME:-pulkit0901}/noisydoc-rag:${IMAGE_TAG:-1.0.0}
+    pull_policy: always
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      OCR_API_KEY: ${OCR_API_KEY}
+      OCR_ENGINE: ${OCR_ENGINE:-2}
+      OCR_LANGUAGE: ${OCR_LANGUAGE:-eng}
+      GROQ_API_KEY: ${GROQ_API_KEY}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+    volumes:
+      - rag_indexes:/app/rag/faiss_store
+      - rag_documents:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  backend:
+    image: ${DOCKERHUB_USERNAME:-pulkit0901}/noisydoc-backend:${IMAGE_TAG:-1.0.0}
+    pull_policy: always
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/pdf-chat-app
+      RAG_SERVICE_URL: http://rag:8000
+      JWT_SECRET: ${JWT_SECRET}
+    ports:
+      - "3000:3000"
+    depends_on:
+      mongo:
+        condition: service_healthy
+      rag:
+        condition: service_healthy
+    volumes:
+      - backend_uploads:/app/backend/uploads
+
+volumes:
+  mongo_data:
+  rag_indexes:
+  rag_documents:
+  backend_uploads:
