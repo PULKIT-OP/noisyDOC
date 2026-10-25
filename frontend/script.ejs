@@ -13,13 +13,18 @@
 
         const msgDiv = document.createElement('div');
         msgDiv.className = `message ${sender}`;
-        if (sender === 'bot') {
-            msgDiv.innerHTML = DOMPurify.sanitize(marked.parse(text));
-        } else {
-            msgDiv.textContent = text;
-        }
+        renderMessage(msgDiv, text, sender);
         chatMessages.appendChild(msgDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight;
+        return msgDiv;
+    }
+
+    function renderMessage(messageElement, text, sender) {
+        if (sender === 'bot') {
+            messageElement.innerHTML = DOMPurify.sanitize(marked.parse(text));
+        } else {
+            messageElement.textContent = text;
+        }
     }
 
     function setActiveDocument(documentId, fileName) {
@@ -191,8 +196,28 @@
                     });
 
                     if (response.ok) {
-                        const data = await response.json();
-                        addMessage(data.answer || 'I couldn\'t find an answer in the document.', 'bot');
+                        const reader = response.body.getReader();
+                        const decoder = new TextDecoder();
+                        let answer = '';
+                        let botMessage;
+
+                        while (true) {
+                            const { value, done } = await reader.read();
+                            if (done) break;
+
+                            answer += decoder.decode(value, { stream: true });
+                            if (!botMessage) {
+                                botMessage = addMessage('', 'bot');
+                            }
+                            renderMessage(botMessage, answer, 'bot');
+                        }
+
+                        answer += decoder.decode();
+                        if (!botMessage) {
+                            addMessage(answer || 'I couldn\'t find an answer in the document.', 'bot');
+                        } else {
+                            renderMessage(botMessage, answer, 'bot');
+                        }
                     } else {
                         addMessage('Sorry, I encountered an error processing your request.', 'bot');
                     }

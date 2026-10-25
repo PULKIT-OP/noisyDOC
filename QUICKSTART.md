@@ -125,6 +125,7 @@ FastAPI server running on port 8000
 
 ### "RAG service not reachable"
 - Verify FastAPI is running on port 8000
+- When using `npm run dev:all`, wait for `Application startup complete` in the FastAPI output before uploading a file
 - Check your `.env` file has `RAG_SERVICE_URL=http://localhost:8000`
 - Restart both services
 

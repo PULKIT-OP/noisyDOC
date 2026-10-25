@@ -215,6 +215,7 @@ What helps:
 ### RAG service not reachable
 
 - Confirm FastAPI is running on port `8000`.
+- When starting with `npm run dev:all`, wait until Uvicorn logs `Application startup complete` before uploading. The backend retries startup connection failures, but ingestion still requires the RAG service to finish starting.
 - Verify `RAG_SERVICE_URL` in `.env`.
 
 ### Missing Groq key

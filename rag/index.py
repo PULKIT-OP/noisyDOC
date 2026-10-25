@@ -1,12 +1,13 @@
 # rag/app.py  — NEW FILE (your FastAPI server)
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import shutil, os
 from threading import Lock
 
 # import YOUR existing logic
-from pipeline import run_ingest, run_query  # we'll add these 2 functions
+from pipeline import run_ingest, stream_query
 
 app = FastAPI()
 ingest_statuses = {}
@@ -85,5 +86,7 @@ def ingest_status(progress_token: str):
 
 @app.post("/query")
 def query(body: QueryRequest):
-    answer = run_query(body.question, body.pdf_id, body.top_k)
-    return {"answer": answer}
+    return StreamingResponse(
+        stream_query(body.question, body.pdf_id, body.top_k),
+        media_type="text/plain",
+    )

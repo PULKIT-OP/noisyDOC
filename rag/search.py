@@ -48,9 +48,27 @@ class RAGSearch:
         return "\n\n".join(text for _, text in scored_chunks[:3])
 
     def search_and_summarize(self, query: str, top_k: int = 10, min_score: float = 0.1) -> str:
+        prompt, fallback = self._build_prompt(query, top_k, min_score)
+        if prompt is None:
+            return fallback
+
+        response = self.llm.invoke([prompt])
+        return response.content
+
+    def stream_search_and_summarize(self, query: str, top_k: int = 10, min_score: float = 0.1):
+        prompt, fallback = self._build_prompt(query, top_k, min_score)
+        if prompt is None:
+            yield fallback
+            return
+
+        for chunk in self.llm.stream([prompt]):
+            if chunk.content:
+                yield chunk.content
+
+    def _build_prompt(self, query: str, top_k: int, min_score: float):
         results = self.vectorstore.query(query, top_k=top_k)
         if not results:
-            return "\nNo documents in the vector store. Please upload a document first."
+            return None, "\nNo documents in the vector store. Please upload a document first."
         # Filter results: convert distance to similarity (lower distance = higher similarity)
         # similarity = 1 / (1 + distance)
         texts = [r["metadata"].get("text", "") for r in results if r["metadata"] and (1 / (1 + r["distance"])) >= min_score]
@@ -58,7 +76,7 @@ class RAGSearch:
         if not context:
             context = self._keyword_fallback_context(query)
             if not context:
-                return "\nNo relevant documents found."
+                return None, "\nNo relevant documents found."
         prompt = f"""You are a helpful assistant. Answer the question using the provided context.
                     If the context contains the answer, provide a detailed response based on the context.
                     If the context does not contain the answer, say: "The provided context does not contain enough information to answer this question."
@@ -69,8 +87,7 @@ class RAGSearch:
                     Question: {query}
 
                     Answer:"""
-        response = self.llm.invoke([prompt])
-        return response.content
+        return prompt, None
 
 # Example usage
 if __name__ == "__main__":
@@ -78,3 +95,5 @@ if __name__ == "__main__":
     query = "What is attention mechanism?"
     summary = rag_search.search_and_summarize(query, top_k=3)
     print("Summary:", summary)
+
+

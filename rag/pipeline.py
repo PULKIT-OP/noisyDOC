@@ -1,4 +1,4 @@
-from data_loaders import load_all_documents, load_document
+from data_loaders import load_document
 from vectorstore import FaissVectorStore
 from search import RAGSearch
 import os
@@ -28,3 +28,18 @@ def run_query(question: str, document_id: str, top_k: int = 3):
     rag_search = RAGSearch(persist_dir=store_dir, load_from_data=False)
     summary = rag_search.search_and_summarize(question, top_k=max(top_k, 8), min_score=0.2)
     return summary
+
+def stream_query(question: str, document_id: str, top_k: int = 3):
+    store_dir = _document_store_dir(document_id)
+    faiss_path = os.path.join(store_dir, "faiss.index")
+    meta_path = os.path.join(store_dir, "metadata.pkl")
+    if not os.path.exists(faiss_path) or not os.path.exists(meta_path):
+        yield "No saved document index found for that document. Upload the PDF again to create it."
+        return
+
+    rag_search = RAGSearch(persist_dir=store_dir, load_from_data=False)
+    yield from rag_search.stream_search_and_summarize(
+        question,
+        top_k=max(top_k, 8),
+        min_score=0.2,
+    )

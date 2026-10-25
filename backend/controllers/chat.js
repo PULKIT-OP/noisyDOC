@@ -1,5 +1,5 @@
 const express = require("express");
-const { queryDocument } = require("../services/ragServices");
+const { streamQueryDocument } = require("../services/ragServices");
 
 async function handleQuery(req, res) {
   const question = req.body.question;
@@ -12,8 +12,9 @@ async function handleQuery(req, res) {
   }
   // Call the RAG service to get the answer
   try {
-    const answer = await queryDocument(question, pdfId);
-    res.json({ answer });
+    const response = await streamQueryDocument(question, pdfId);
+    res.setHeader("Content-Type", "text/plain; charset=utf-8");
+    response.data.pipe(res);
   } catch (error) {
     res
       .status(500)
